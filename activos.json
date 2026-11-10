@@ -1,0 +1,120 @@
+[
+  {
+    "id": "IE00BYX5NX33",
+    "nombre": "Fidelity MSCI World",
+    "tipo": "Fondo",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "ft_fondo", "s": "IE00BYX5NX33:EUR"},
+      {"tipo": "yahoo_isin", "isin": "IE00BYX5NX33"}
+    ]
+  },
+  {
+    "id": "LU0625737910",
+    "nombre": "Pictet China Index",
+    "tipo": "Fondo",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "ft_fondo", "s": "LU0625737910:EUR"},
+      {"tipo": "yahoo_isin", "isin": "LU0625737910"}
+    ]
+  },
+  {
+    "id": "LU0171305526",
+    "nombre": "BlackRock World Gold",
+    "tipo": "Fondo",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "ft_fondo", "s": "LU0171305526:EUR"},
+      {"tipo": "yahoo_isin", "isin": "LU0171305526"}
+    ]
+  },
+  {
+    "id": "IE000QAZP7L2",
+    "nombre": "iShares Emerging Markets (S Acc EUR)",
+    "tipo": "Fondo",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "ft_fondo", "s": "IE000QAZP7L2:EUR"},
+      {"tipo": "yahoo_isin", "isin": "IE000QAZP7L2"}
+    ]
+  },
+  {
+    "id": "IE00B43VDT70",
+    "nombre": "Plata física (ETC)",
+    "tipo": "ETC",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "yahoo_isin", "isin": "IE00B43VDT70", "sufijos": [".DE", ".F", ".MI", ".AS", ".PA", ".SG"]}
+    ]
+  },
+  {
+    "id": "CA2548481043",
+    "nombre": "District Metals",
+    "tipo": "Acción",
+    "divisa": "CAD",
+    "fuentes": [
+      {"tipo": "yahoo", "s": "DMX.V"}
+    ]
+  },
+  {
+    "id": "ETH",
+    "nombre": "Ethereum",
+    "tipo": "Cripto",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "coingecko", "id": "ethereum"},
+      {"tipo": "kraken", "par": "ETHEUR"}
+    ]
+  },
+  {
+    "id": "SOL",
+    "nombre": "Solana",
+    "tipo": "Cripto",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "coingecko", "id": "solana"},
+      {"tipo": "kraken", "par": "SOLEUR"}
+    ]
+  },
+  {
+    "id": "XRP",
+    "nombre": "XRP",
+    "tipo": "Cripto",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "coingecko", "id": "ripple"},
+      {"tipo": "kraken", "par": "XRPEUR"}
+    ]
+  },
+  {
+    "id": "LINK",
+    "nombre": "Chainlink",
+    "tipo": "Cripto",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "coingecko", "id": "chainlink"},
+      {"tipo": "kraken", "par": "LINKEUR"}
+    ]
+  },
+  {
+    "id": "RENDER",
+    "nombre": "Render",
+    "tipo": "Cripto",
+    "divisa": "EUR",
+    "fuentes": [
+      {"tipo": "coingecko", "id": "render-token"},
+      {"tipo": "kraken", "par": "RENDEREUR"}
+    ]
+  },
+  {
+    "id": "EURCAD",
+    "nombre": "Dólares canadienses por euro",
+    "tipo": "Divisa",
+    "divisa": "CAD",
+    "fuentes": [
+      {"tipo": "yahoo", "s": "EURCAD=X"},
+      {"tipo": "frankfurter", "de": "EUR", "a": "CAD"}
+    ]
+  }
+]

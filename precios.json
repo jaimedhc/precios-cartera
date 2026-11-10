@@ -1,0 +1,14 @@
+[
+  {"id": "IE00BYX5NX33", "nombre": "Fidelity MSCI World", "tipo": "Fondo", "precio": 14.12, "divisa": "EUR", "fecha": "2026-11-06", "fuente": "finanzen.ch"},
+  {"id": "LU0625737910", "nombre": "Pictet China Index", "tipo": "Fondo", "precio": 130.54, "divisa": "EUR", "fecha": "2026-11-05", "fuente": "Finect"},
+  {"id": "LU0171305526", "nombre": "BlackRock World Gold", "tipo": "Fondo", "precio": 95.47, "divisa": "EUR", "fecha": "2026-11-09", "fuente": "Fortuneo"},
+  {"id": "IE000QAZP7L2", "nombre": "iShares Emerging Markets (S Acc EUR)", "tipo": "Fondo", "precio": 12.72, "divisa": "EUR", "fecha": "2026-11-06", "fuente": "Finect"},
+  {"id": "IE00B43VDT70", "nombre": "Plata física (ETC)", "tipo": "ETC", "precio": 44.66, "divisa": "EUR", "fecha": "2026-11-09", "fuente": "finanzen.at"},
+  {"id": "CA2548481043", "nombre": "District Metals", "tipo": "Acción", "precio": 0.37, "divisa": "CAD", "fecha": "2026-11-06", "fuente": "YCharts"},
+  {"id": "ETH", "nombre": "Ethereum", "tipo": "Cripto", "precio": 1897.62, "divisa": "EUR", "fecha": "2026-11-10", "fuente": "CoinMarketCap"},
+  {"id": "SOL", "nombre": "Solana", "tipo": "Cripto", "precio": 77.26, "divisa": "EUR", "fecha": "2026-11-10", "fuente": "CoinMarketCap"},
+  {"id": "XRP", "nombre": "XRP", "tipo": "Cripto", "precio": 0.9739, "divisa": "EUR", "fecha": "2026-11-10", "fuente": "CoinMarketCap"},
+  {"id": "LINK", "nombre": "Chainlink", "tipo": "Cripto", "precio": 9.58, "divisa": "EUR", "fecha": "2026-11-10", "fuente": "CoinMarketCap"},
+  {"id": "RENDER", "nombre": "Render", "tipo": "Cripto", "precio": 1.4, "divisa": "EUR", "fecha": "2026-11-10", "fuente": "CoinMarketCap"},
+  {"id": "EURCAD", "nombre": "Dólares canadienses por euro", "tipo": "Divisa", "precio": 1.5748, "divisa": "CAD", "fecha": "2026-11-08", "fuente": "FXFeed"}
+]
