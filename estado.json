@@ -1,0 +1,109 @@
+{
+  "actualizado": "2026-11-10T20:02:27+01:00",
+  "activos": {
+    "IE00BYX5NX33": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "FT Markets",
+      "simbolo": "IE00BYX5NX33:EUR",
+      "hora": null,
+      "cambio_vs_anterior": 0.0177
+    },
+    "LU0625737910": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "FT Markets",
+      "simbolo": "LU0625737910:EUR",
+      "hora": null,
+      "cambio_vs_anterior": -0.0162
+    },
+    "LU0171305526": {
+      "fallos": [
+        "ft_fondo: FT: no encuentro el precio en la página",
+        "yahoo_isin: MI9S.F: int() argument must be a string, a bytes-like object or a real number, not 'Timestamp'"
+      ],
+      "ok": false,
+      "conservado": true
+    },
+    "IE000QAZP7L2": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "FT Markets",
+      "simbolo": "IE000QAZP7L2:EUR",
+      "hora": null,
+      "cambio_vs_anterior": 0.011
+    },
+    "IE00B43VDT70": {
+      "fallos": [
+        "yahoo_isin: IE00B43VDT70.SG: $IE00B43VDT70.SG: possibly delisted; no price data found  (period=10d); SSLV.L: int() argument must be a string, a bytes-like object or a real number, not 'Timestamp'"
+      ],
+      "ok": false,
+      "conservado": true
+    },
+    "CA2548481043": {
+      "fallos": [
+        "yahoo: int() argument must be a string, a bytes-like object or a real number, not 'Timestamp'"
+      ],
+      "ok": false,
+      "conservado": true
+    },
+    "ETH": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "CoinGecko",
+      "simbolo": "ethereum",
+      "hora": "2026-11-10T20:01:36+01:00",
+      "cambio_vs_anterior": -0.0356
+    },
+    "SOL": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "CoinGecko",
+      "simbolo": "solana",
+      "hora": "2026-11-10T20:01:36+01:00",
+      "cambio_vs_anterior": -0.0384
+    },
+    "XRP": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "CoinGecko",
+      "simbolo": "ripple",
+      "hora": "2026-11-10T20:01:36+01:00",
+      "cambio_vs_anterior": -0.0145
+    },
+    "LINK": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "CoinGecko",
+      "simbolo": "chainlink",
+      "hora": "2026-11-10T20:02:03+01:00",
+      "cambio_vs_anterior": -0.0386
+    },
+    "RENDER": {
+      "fallos": [],
+      "ok": true,
+      "fuente": "CoinGecko",
+      "simbolo": "render-token",
+      "hora": "2026-11-10T20:02:03+01:00",
+      "cambio_vs_anterior": 0.0071
+    },
+    "EURCAD": {
+      "fallos": [
+        "yahoo: int() argument must be a string, a bytes-like object or a real number, not 'Timestamp'"
+      ],
+      "ok": true,
+      "fuente": "BCE (Frankfurter)",
+      "simbolo": "EURCAD",
+      "hora": null,
+      "cambio_vs_anterior": 0.0066
+    }
+  },
+  "errores": [
+    "LU0171305526: sin precio nuevo",
+    "IE00B43VDT70: sin precio nuevo",
+    "CA2548481043: sin precio nuevo"
+  ],
+  "msci": {
+    "ok": true
+  }
+}
