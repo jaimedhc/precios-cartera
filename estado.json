@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-10T21:16:12+01:00",
+  "actualizado": "2026-11-10T22:15:03+01:00",
   "activos": {
     "IE00BYX5NX33": {
       "fallos": [],
@@ -48,64 +48,64 @@
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "DMX.V",
-      "hora": "2026-11-10T21:01:50+01:00",
-      "cambio_vs_anterior": 0.0
+      "hora": "2026-11-10T21:59:59+01:00",
+      "cambio_vs_anterior": -0.0375
     },
     "ETH": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ethereum",
-      "hora": "2026-11-10T21:15:42+01:00",
-      "cambio_vs_anterior": 0.0015
+      "hora": "2026-11-10T22:14:28+01:00",
+      "cambio_vs_anterior": 0.0066
     },
     "SOL": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "solana",
-      "hora": "2026-11-10T21:15:42+01:00",
-      "cambio_vs_anterior": 0.0026
+      "hora": "2026-11-10T22:14:28+01:00",
+      "cambio_vs_anterior": 0.0034
     },
     "XRP": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ripple",
-      "hora": "2026-11-10T21:15:42+01:00",
-      "cambio_vs_anterior": -0.0046
+      "hora": "2026-11-10T22:14:35+01:00",
+      "cambio_vs_anterior": -0.0023
     },
     "LINK": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "chainlink",
-      "hora": "2026-11-10T21:15:42+01:00",
-      "cambio_vs_anterior": 0.0043
+      "hora": "2026-11-10T22:14:35+01:00",
+      "cambio_vs_anterior": 0.0022
     },
     "RENDER": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "render-token",
-      "hora": "2026-11-10T21:15:42+01:00",
-      "cambio_vs_anterior": 0.0071
+      "hora": "2026-11-10T22:14:35+01:00",
+      "cambio_vs_anterior": 0.0
     },
     "EURCAD": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "EURCAD=X",
-      "hora": "2026-11-10T21:16:08+01:00",
-      "cambio_vs_anterior": 0.0002
+      "hora": "2026-11-10T22:15:00+01:00",
+      "cambio_vs_anterior": 0.0001
     },
     "EURUSD": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "EURUSD=X",
-      "hora": "2026-11-10T21:15:34+01:00",
-      "cambio_vs_anterior": 0.0
+      "hora": "2026-11-10T22:14:30+01:00",
+      "cambio_vs_anterior": -0.0001
     }
   },
   "errores": [],
