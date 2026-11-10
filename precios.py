@@ -64,10 +64,20 @@ def redondear(valor):
     return round(valor, 2) if abs(valor) >= 100 else round(valor, 4)
 
 
+def a_epoch(valor):
+    """Segundos desde 1970 a partir de un número, un datetime o un Timestamp de pandas."""
+    if valor is None or valor == "":
+        return None
+    if hasattr(valor, "timestamp"):
+        return int(valor.timestamp())
+    return int(float(valor))
+
+
 def hora_desde_epoch(segundos):
+    segundos = a_epoch(segundos)
     if not segundos:
         return None
-    instante = datetime.fromtimestamp(int(segundos), tz=timezone.utc)
+    instante = datetime.fromtimestamp(segundos, tz=timezone.utc)
     return instante.astimezone(MADRID).replace(microsecond=0).isoformat()
 
 
@@ -124,10 +134,10 @@ def historial_yahoo(simbolo, periodo="10d"):
 def precio_yahoo(simbolo):
     tabla, meta = historial_yahoo(simbolo)
     precio = meta.get("regularMarketPrice") or float(tabla["Close"].iloc[-1])
-    hora_epoch = meta.get("regularMarketTime")
+    hora_epoch = a_epoch(meta.get("regularMarketTime"))
     if hora_epoch:
         zona = ZoneInfo(meta.get("exchangeTimezoneName") or "UTC")
-        fecha = datetime.fromtimestamp(int(hora_epoch), tz=zona).date().isoformat()
+        fecha = datetime.fromtimestamp(hora_epoch, tz=zona).date().isoformat()
     else:
         fecha = tabla.index[-1].date().isoformat()
     return {
@@ -164,8 +174,8 @@ def precio_yahoo_isin(isin, divisa, sufijos=None):
         except Exception as error:  # noqa: BLE001
             errores.append(f"{simbolo}: {error}")
             continue
-        if resultado["moneda"] and resultado["moneda"] != divisa:
-            errores.append(f"{simbolo}: cotiza en {resultado['moneda']}")
+        if resultado["moneda"] != divisa:
+            errores.append(f"{simbolo}: cotiza en {resultado['moneda'] or 'moneda desconocida'}")
             continue
         return resultado
     raise ValueError("; ".join(errores) or f"sin cotización en {divisa}")
@@ -182,7 +192,13 @@ def precio_ft_fondo(simbolo):
         html,
     )
     if not encontrado:
-        raise ValueError("FT: no encuentro el precio en la página")
+        titulo = re.search(r"<title>(.*?)</title>", html, re.S)
+        pista = re.search(r".{0,80}Price \(.{0,80}", html, re.S)
+        raise ValueError(
+            "FT: no encuentro el precio en la página "
+            f"(título: {titulo.group(1).strip()[:100] if titulo else '?'}; "
+            f"texto: {re.sub(r'<[^>]+>', ' ', pista.group(0))[:160] if pista else 'sin Price'})"
+        )
     fecha = None
     cuando = re.search(r"[Aa]s of\s+([A-Z][a-z]{2})\s+(\d{1,2})\s+(\d{4})", html)
     if cuando:

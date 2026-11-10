@@ -45,7 +45,10 @@
     "tipo": "ETC",
     "divisa": "EUR",
     "fuentes": [
-      {"tipo": "yahoo_isin", "isin": "IE00B43VDT70", "sufijos": [".DE", ".F", ".MI", ".AS", ".PA", ".SG"]}
+      {"tipo": "yahoo", "s": "SSLV.MI"},
+      {"tipo": "yahoo", "s": "8PSS.DE"},
+      {"tipo": "yahoo", "s": "8PSS.F"},
+      {"tipo": "yahoo_isin", "isin": "IE00B43VDT70", "sufijos": [".DE", ".F", ".MI", ".AS", ".PA", ".L", ".SG"]}
     ]
   },
   {
@@ -115,6 +118,16 @@
     "fuentes": [
       {"tipo": "yahoo", "s": "EURCAD=X"},
       {"tipo": "frankfurter", "de": "EUR", "a": "CAD"}
+    ]
+  },
+  {
+    "id": "EURUSD",
+    "nombre": "Dólares estadounidenses por euro",
+    "tipo": "Divisa",
+    "divisa": "USD",
+    "fuentes": [
+      {"tipo": "yahoo", "s": "EURUSD=X"},
+      {"tipo": "frankfurter", "de": "EUR", "a": "USD"}
     ]
   }
 ]
