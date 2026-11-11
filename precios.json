@@ -21,9 +21,9 @@
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 91.616,
+    "precio": 93.083,
     "divisa": "EUR",
-    "fecha": "2026-11-10",
+    "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
   },
   {
@@ -39,9 +39,9 @@
     "id": "IE00B43VDT70",
     "nombre": "Plata física (ETC)",
     "tipo": "ETC",
-    "precio": 43.825,
+    "precio": 45.185,
     "divisa": "EUR",
-    "fecha": "2026-11-10",
+    "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
   },
   {
@@ -57,7 +57,7 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1853.68,
+    "precio": 1844.23,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 74.66,
+    "precio": 74.55,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.9503,
+    "precio": 0.9482,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 9.3,
+    "precio": 9.29,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5845,
+    "precio": 1.5834,
     "divisa": "CAD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -111,7 +111,7 @@
     "id": "EURUSD",
     "nombre": "Dólares estadounidenses por euro",
     "tipo": "Divisa",
-    "precio": 1.1148,
+    "precio": 1.1143,
     "divisa": "USD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
