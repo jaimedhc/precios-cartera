@@ -12,16 +12,16 @@
     "id": "LU0625737910",
     "nombre": "Pictet China Index",
     "tipo": "Fondo",
-    "precio": 128.43,
+    "precio": 128.9,
     "divisa": "EUR",
-    "fecha": "2026-11-09",
+    "fecha": "2026-11-10",
     "fuente": "FT Markets"
   },
   {
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 93.033,
+    "precio": 92.734,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -30,16 +30,16 @@
     "id": "IE000QAZP7L2",
     "nombre": "iShares Emerging Markets (S Acc EUR)",
     "tipo": "Fondo",
-    "precio": 12.86,
+    "precio": 13.1,
     "divisa": "EUR",
-    "fecha": "2026-11-09",
+    "fecha": "2026-11-10",
     "fuente": "FT Markets"
   },
   {
     "id": "IE00B43VDT70",
     "nombre": "Plata física (ETC)",
     "tipo": "ETC",
-    "precio": 45.165,
+    "precio": 45.2,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -57,7 +57,7 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1844.57,
+    "precio": 1844.78,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 75.2,
+    "precio": 75.76,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.9472,
+    "precio": 0.95,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 9.31,
+    "precio": 9.29,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5852,
+    "precio": 1.582,
     "divisa": "CAD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -111,7 +111,7 @@
     "id": "EURUSD",
     "nombre": "Dólares estadounidenses por euro",
     "tipo": "Divisa",
-    "precio": 1.1142,
+    "precio": 1.112,
     "divisa": "USD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
