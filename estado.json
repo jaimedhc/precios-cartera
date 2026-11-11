@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-11T23:28:29+01:00",
+  "actualizado": "2026-11-12T00:24:13+01:00",
   "activos": {
     "IE00BYX5NX33": {
       "fallos": [],
@@ -56,56 +56,56 @@
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ethereum",
-      "hora": "2026-11-11T23:28:08+01:00",
-      "cambio_vs_anterior": -0.0021
+      "hora": "2026-11-12T00:23:47+01:00",
+      "cambio_vs_anterior": -0.0167
     },
     "SOL": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "solana",
-      "hora": "2026-11-11T23:27:55+01:00",
-      "cambio_vs_anterior": -0.0039
+      "hora": "2026-11-12T00:23:47+01:00",
+      "cambio_vs_anterior": -0.0232
     },
     "XRP": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ripple",
-      "hora": "2026-11-11T23:27:55+01:00",
-      "cambio_vs_anterior": -0.0035
+      "hora": "2026-11-12T00:23:47+01:00",
+      "cambio_vs_anterior": -0.0167
     },
     "LINK": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "chainlink",
-      "hora": "2026-11-11T23:27:29+01:00",
-      "cambio_vs_anterior": -0.0053
+      "hora": "2026-11-12T00:23:47+01:00",
+      "cambio_vs_anterior": -0.0279
     },
     "RENDER": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "render-token",
-      "hora": "2026-11-11T23:28:08+01:00",
-      "cambio_vs_anterior": 0.0
+      "hora": "2026-11-12T00:23:55+01:00",
+      "cambio_vs_anterior": -0.0211
     },
     "EURCAD": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "EURCAD=X",
-      "hora": "2026-11-11T23:28:23+01:00",
-      "cambio_vs_anterior": -0.0003
+      "hora": "2026-11-12T00:24:09+01:00",
+      "cambio_vs_anterior": 0.0009
     },
     "EURUSD": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "EURUSD=X",
-      "hora": "2026-11-11T23:27:29+01:00",
-      "cambio_vs_anterior": 0.0002
+      "hora": "2026-11-12T00:23:30+01:00",
+      "cambio_vs_anterior": 0.0007
     }
   },
   "errores": [],
