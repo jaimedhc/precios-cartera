@@ -15,7 +15,7 @@
   "nota": "Caídas medidas con cierres diarios frente al cierre más alto de las 52 semanas anteriores. 'caida_hoy' usa el último cierre completo y 'caida_ayer' el anterior.",
   "en_curso": {
     "fecha": "2026-11-11",
-    "precio": 129.96,
-    "caida": 0.0173
+    "precio": 130.035,
+    "caida": 0.0167
   }
 }
