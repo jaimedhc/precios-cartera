@@ -21,7 +21,7 @@
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 91.595,
+    "precio": 91.603,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -48,7 +48,7 @@
     "id": "CA2548481043",
     "nombre": "District Metals",
     "tipo": "Acción",
-    "precio": 0.395,
+    "precio": 0.39,
     "divisa": "CAD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -57,7 +57,7 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1879.83,
+    "precio": 1872.18,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 76.75,
+    "precio": 76.29,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.9595,
+    "precio": 0.9528,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 9.45,
+    "precio": 9.41,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -93,7 +93,7 @@
     "id": "RENDER",
     "nombre": "Render",
     "tipo": "Cripto",
-    "precio": 1.44,
+    "precio": 1.42,
     "divisa": "EUR",
     "fecha": "2026-11-11",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5799,
+    "precio": 1.58,
     "divisa": "CAD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
@@ -111,7 +111,7 @@
     "id": "EURUSD",
     "nombre": "Dólares estadounidenses por euro",
     "tipo": "Divisa",
-    "precio": 1.1093,
+    "precio": 1.1094,
     "divisa": "USD",
     "fecha": "2026-11-11",
     "fuente": "Yahoo Finance"
