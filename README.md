@@ -10,6 +10,7 @@ actualizar el panel de la cartera.
 |---|---|
 | `precios.json` | Último precio de cada activo, con su fecha y su fuente. |
 | `msci.json` | Cierres del iShares Core MSCI World (EUNL, Xetra) y su caída desde el cierre más alto de 52 semanas, para el aviso de recompra. |
+| `vigilancia.json` | Para cada valor de `vigilancia_lista.json`: media de 200 sesiones, máximo de 20 sesiones, mínimo de 10, stop orientativo y si cumple la regla de entrada del tramo a corto plazo. |
 | `estado.json` | De dónde salió cada precio, a qué hora y qué fuentes fallaron. |
 
 Solo hay precios: ninguna cantidad ni importe de la cartera.
@@ -30,4 +31,5 @@ precio reciente se descarta como error de la fuente.
 - Se ejecuta solo cada 30 minutos (GitHub Actions, pestaña **Actions** → **Precios**).
 - Para lanzarlo a mano: **Actions** → **Precios** → **Run workflow**.
 - Para añadir o quitar un activo, edita `activos.json`.
+- Para añadir o quitar un valor vigilado, edita `vigilancia_lista.json` (con su símbolo de Yahoo Finance, por ejemplo `NVDA` o `IDR.MC`).
 - Para probarlo en tu ordenador: `pip install -r requirements.txt` y `python precios.py`.

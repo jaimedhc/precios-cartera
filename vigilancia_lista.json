@@ -1,0 +1,7 @@
+[
+  {"id": "US67066G1040", "nombre": "NVIDIA", "simbolo": "NVDA", "mercado": "Nasdaq", "divisa": "USD"},
+  {"id": "ES0177542018", "nombre": "IAG", "simbolo": "IAG.MC", "mercado": "Bolsa de Madrid", "divisa": "EUR"},
+  {"id": "ES0109067019", "nombre": "Amadeus", "simbolo": "AMS.MC", "mercado": "Bolsa de Madrid", "divisa": "EUR"},
+  {"id": "ES0173516115", "nombre": "Repsol", "simbolo": "REP.MC", "mercado": "Bolsa de Madrid", "divisa": "EUR"},
+  {"id": "ES0118594417", "nombre": "Indra", "simbolo": "IDR.MC", "mercado": "Bolsa de Madrid", "divisa": "EUR"}
+]

@@ -2,12 +2,15 @@
 """Actualiza los precios de la cartera.
 
 Lee activos.json y, para cada activo, prueba sus fuentes en orden hasta que
-una funciona. Escribe tres ficheros:
+una funciona. Escribe cuatro ficheros:
 
 - precios.json: último precio de cada activo, con el mismo formato que el
   panel de Claude (id, nombre, tipo, precio, divisa, fecha, fuente).
 - msci.json: cierres del iShares Core MSCI World (EUNL, Xetra) y su caída
   desde el cierre más alto de 52 semanas, para el aviso de recompra.
+- vigilancia.json: para cada valor de vigilancia_lista.json, los datos de la
+  regla de entrada del tramo a corto plazo (media de 200 sesiones, máximo de
+  20 sesiones, mínimo de 10 y stop orientativo).
 - estado.json: de dónde salió cada precio, a qué hora y qué falló.
 
 Si todas las fuentes de un activo fallan, conserva su precio anterior.
@@ -466,6 +469,131 @@ def datos_msci():
     return datos
 
 
+# ---------------------------------------------------------------- lista de vigilancia
+
+REGLA_ENTRADA = (
+    "Entrada solo si el último cierre está por encima de la media de 200 sesiones "
+    "y es el más alto de las últimas 20 sesiones. Stop orientativo: el mínimo de "
+    "las últimas 10 sesiones, pero nunca más de un 8 % por debajo del cierre. "
+    "Salida: cierre por debajo del mínimo de cierre de las 20 sesiones anteriores."
+)
+
+# Hora local a partir de la cual el cierre del día ya es definitivo, por si
+# Yahoo no da el horario de la sesión.
+CIERRE_LOCAL = {
+    "America/New_York": (16, 15),
+    "Europe/Madrid": (17, 50),
+    "Europe/Berlin": (17, 50),
+}
+
+
+def sesion_terminada(fecha_barra, meta):
+    """True si la barra diaria de fecha_barra es de una sesión ya cerrada."""
+    zona = ZoneInfo(meta.get("exchangeTimezoneName") or "UTC")
+    momento = datetime.now(zona)
+    if fecha_barra < momento.date():
+        return True
+    if fecha_barra > momento.date():
+        return False
+    periodo = (meta.get("currentTradingPeriod") or {}).get("regular") or {}
+    try:
+        fin = a_epoch(periodo.get("end"))
+    except (TypeError, ValueError):
+        fin = None
+    if fin:
+        fin_sesion = datetime.fromtimestamp(fin, tz=zona)
+        if fin_sesion.date() == fecha_barra:
+            return momento >= fin_sesion + timedelta(minutes=15)
+    hora, minuto = CIERRE_LOCAL.get(str(zona), (18, 0))
+    return (momento.hour, momento.minute) >= (hora, minuto)
+
+
+def analisis_tecnico(valor):
+    tabla, meta = historial_yahoo(valor["simbolo"], periodo="14mo")
+    moneda = (meta.get("currency") or "").upper() or None
+    if valor.get("divisa") and moneda and moneda != valor["divisa"]:
+        raise ValueError(f"cotiza en {moneda}, esperaba {valor['divisa']}")
+    fechas = [indice.date() for indice in tabla.index]
+    cierres = [float(c) for c in tabla["Close"]]
+    minimos = [float(m) for m in tabla["Low"].fillna(tabla["Close"])]
+
+    en_curso = None
+    if fechas and not sesion_terminada(fechas[-1], meta):
+        en_curso = {"fecha": fechas[-1].isoformat(), "precio": redondear(cierres[-1])}
+        fechas, cierres, minimos = fechas[:-1], cierres[:-1], minimos[:-1]
+    if len(cierres) < 200:
+        raise ValueError(f"solo hay {len(cierres)} sesiones y hacen falta 200")
+
+    cierre = cierres[-1]
+    media_200 = sum(cierres[-200:]) / 200
+    max_20 = max(cierres[-20:])
+    min_20_previo = min(cierres[-21:-1])
+    min_10 = min(minimos[-10:])
+    stop = max(min_10, cierre * 0.92)
+    desde = fechas[-1] - timedelta(days=365)
+    f_max, c_max = max(
+        ((f, c) for f, c in zip(fechas, cierres) if f > desde), key=lambda par: par[1]
+    )
+    sobre_media = cierre > media_200
+    en_max_20 = cierre >= max_20
+
+    datos = {
+        "id": valor["id"],
+        "nombre": valor["nombre"],
+        "simbolo": valor["simbolo"],
+        "mercado": valor.get("mercado"),
+        "divisa": moneda or valor.get("divisa"),
+        "fecha": fechas[-1].isoformat(),
+        "cierre": redondear(cierre),
+        "cambio_1d": round(cierre / cierres[-2] - 1, 4),
+        "cambio_5d": round(cierre / cierres[-6] - 1, 4),
+        "cambio_20d": round(cierre / cierres[-21] - 1, 4),
+        "media_200": redondear(media_200),
+        "distancia_media_200": round(cierre / media_200 - 1, 4),
+        "sobre_media_200": sobre_media,
+        "max_20": redondear(max_20),
+        "distancia_max_20": round(cierre / max_20 - 1, 4),
+        "en_max_20": en_max_20,
+        "senal_entrada": sobre_media and en_max_20,
+        "min_10": redondear(min_10),
+        "stop_orientativo": redondear(stop),
+        "min_20_previo": redondear(min_20_previo),
+        "bajo_min_20": cierre < min_20_previo,
+        "max_52s": redondear(c_max),
+        "fecha_max_52s": f_max.isoformat(),
+        "caida_desde_max_52s": round(1 - cierre / c_max, 4),
+        "fuente": f"Yahoo Finance ({valor['simbolo']})",
+    }
+    if en_curso:
+        datos["en_curso"] = en_curso
+    return datos
+
+
+def datos_vigilancia():
+    lista = leer_json("vigilancia_lista.json", [])
+    previos = {v["id"]: v for v in leer_json("vigilancia.json", {}).get("valores", [])}
+    valores, fallos = [], []
+    for valor in lista:
+        try:
+            valores.append(analisis_tecnico(valor))
+        except Exception as error:  # noqa: BLE001
+            fallos.append(f"{valor.get('simbolo')}: {str(error)[:300]}")
+            if valor["id"] in previos:
+                valores.append({**previos[valor["id"]], "conservado": True})
+        time.sleep(1)
+    return {
+        "actualizado": ahora().isoformat(),
+        "regla": REGLA_ENTRADA,
+        "nota": (
+            "Calculado con cierres diarios sin ajustar por dividendos (como los gráficos "
+            "del bróker), solo con sesiones ya cerradas. 'en_curso' es el precio de la "
+            "sesión abierta, si la hay. 'stop_orientativo' supone entrar al último cierre."
+        ),
+        "valores": valores,
+        "fallos": fallos,
+    }
+
+
 # ---------------------------------------------------------------- principal
 
 def main():
@@ -482,6 +610,16 @@ def main():
     except Exception as error:  # noqa: BLE001
         estado["msci"] = {"ok": False, "fallo": str(error)[:300]}
         estado["errores"].append(f"MSCI: {error}")
+
+    try:
+        vigilancia = datos_vigilancia()
+        escribir_json("vigilancia.json", vigilancia)
+        nuevos_vigilancia = sum(1 for v in vigilancia["valores"] if not v.get("conservado"))
+        estado["vigilancia"] = {"ok": nuevos_vigilancia, "fallos": vigilancia["fallos"]}
+        estado["errores"].extend(f"Vigilancia: {fallo}" for fallo in vigilancia["fallos"])
+    except Exception as error:  # noqa: BLE001
+        estado["vigilancia"] = {"ok": 0, "fallo": str(error)[:300]}
+        estado["errores"].append(f"Vigilancia: {error}")
 
     estado["actualizado"] = ahora().isoformat()
     escribir_json("estado.json", estado)
