@@ -57,7 +57,7 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1856.53,
+    "precio": 1851.99,
     "divisa": "EUR",
     "fecha": "2026-11-12",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 75.2,
+    "precio": 75.09,
     "divisa": "EUR",
     "fecha": "2026-11-12",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.9488,
+    "precio": 0.9418,
     "divisa": "EUR",
     "fecha": "2026-11-12",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 9.19,
+    "precio": 9.13,
     "divisa": "EUR",
     "fecha": "2026-11-12",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5794,
+    "precio": 1.5788,
     "divisa": "CAD",
     "fecha": "2026-11-12",
     "fuente": "Yahoo Finance"
