@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T13:22:34+01:00",
+  "actualizado": "2026-11-13T13:29:42+01:00",
   "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
   "activos": [
     {
@@ -78,48 +78,48 @@
       "id": "ETH",
       "nombre": "Ethereum",
       "tipo": "Cripto",
-      "precio": 1772.64,
+      "precio": 1771.88,
       "divisa": "EUR",
       "fecha": "2026-11-13",
-      "cambio": -0.0291,
+      "cambio": -0.0266,
       "base": "24h",
-      "precio_anterior": 1825.77,
+      "precio_anterior": 1820.3,
       "fecha_anterior": null
     },
     {
       "id": "SOL",
       "nombre": "Solana",
       "tipo": "Cripto",
-      "precio": 73.0,
+      "precio": 72.97,
       "divisa": "EUR",
       "fecha": "2026-11-13",
-      "cambio": -0.0191,
+      "cambio": -0.0149,
       "base": "24h",
-      "precio_anterior": 74.4214,
+      "precio_anterior": 74.0737,
       "fecha_anterior": null
     },
     {
       "id": "XRP",
       "nombre": "XRP",
       "tipo": "Cripto",
-      "precio": 0.9267,
+      "precio": 0.9258,
       "divisa": "EUR",
       "fecha": "2026-11-13",
-      "cambio": -0.007,
+      "cambio": -0.0059,
       "base": "24h",
-      "precio_anterior": 0.9332,
+      "precio_anterior": 0.9313,
       "fecha_anterior": null
     },
     {
       "id": "LINK",
       "nombre": "Chainlink",
       "tipo": "Cripto",
-      "precio": 9.04,
+      "precio": 9.03,
       "divisa": "EUR",
       "fecha": "2026-11-13",
-      "cambio": 0.0042,
+      "cambio": 0.0074,
       "base": "24h",
-      "precio_anterior": 9.0022,
+      "precio_anterior": 8.9637,
       "fecha_anterior": null
     },
     {
@@ -129,9 +129,9 @@
       "precio": 1.39,
       "divisa": "EUR",
       "fecha": "2026-11-13",
-      "cambio": 0.0294,
+      "cambio": 0.0314,
       "base": "24h",
-      "precio_anterior": 1.3503,
+      "precio_anterior": 1.3477,
       "fecha_anterior": null
     },
     {
@@ -150,10 +150,10 @@
       "id": "EURUSD",
       "nombre": "Dólares estadounidenses por euro",
       "tipo": "Divisa",
-      "precio": 1.1051,
+      "precio": 1.1053,
       "divisa": "USD",
       "fecha": "2026-11-13",
-      "cambio": -0.0006,
+      "cambio": -0.0005,
       "base": "día anterior",
       "precio_anterior": 1.1058,
       "fecha_anterior": "2026-11-12"
