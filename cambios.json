@@ -1,0 +1,162 @@
+{
+  "actualizado": "2026-11-13T13:22:34+01:00",
+  "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
+  "activos": [
+    {
+      "id": "IE00BYX5NX33",
+      "nombre": "Fidelity MSCI World",
+      "tipo": "Fondo",
+      "precio": 14.61,
+      "divisa": "EUR",
+      "fecha": "2026-11-12",
+      "cambio": -0.0007,
+      "base": "día anterior",
+      "precio_anterior": 14.62,
+      "fecha_anterior": "2026-11-11"
+    },
+    {
+      "id": "LU0625737910",
+      "nombre": "Pictet China Index",
+      "tipo": "Fondo",
+      "precio": 128.57,
+      "divisa": "EUR",
+      "fecha": "2026-11-11",
+      "cambio": -0.0026,
+      "base": "día anterior",
+      "precio_anterior": 128.9,
+      "fecha_anterior": "2026-11-10"
+    },
+    {
+      "id": "LU0171305526",
+      "nombre": "BlackRock World Gold",
+      "tipo": "Fondo",
+      "precio": 87.166,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": -0.0122,
+      "base": "día anterior",
+      "precio_anterior": 88.245,
+      "fecha_anterior": "2026-11-12"
+    },
+    {
+      "id": "IE000QAZP7L2",
+      "nombre": "iShares Emerging Markets (S Acc EUR)",
+      "tipo": "Fondo",
+      "precio": 13.41,
+      "divisa": "EUR",
+      "fecha": "2026-11-11",
+      "cambio": 0.0237,
+      "base": "día anterior",
+      "precio_anterior": 13.1,
+      "fecha_anterior": "2026-11-10"
+    },
+    {
+      "id": "IE00B43VDT70",
+      "nombre": "Plata física (ETC)",
+      "tipo": "ETC",
+      "precio": 42.98,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": -0.0035,
+      "base": "día anterior",
+      "precio_anterior": 43.13,
+      "fecha_anterior": "2026-11-12"
+    },
+    {
+      "id": "CA2548481043",
+      "nombre": "District Metals",
+      "tipo": "Acción",
+      "precio": 0.38,
+      "divisa": "CAD",
+      "fecha": "2026-11-12",
+      "cambio": 0.0,
+      "base": "día anterior",
+      "precio_anterior": 0.38,
+      "fecha_anterior": "2026-11-11"
+    },
+    {
+      "id": "ETH",
+      "nombre": "Ethereum",
+      "tipo": "Cripto",
+      "precio": 1772.64,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": -0.0291,
+      "base": "24h",
+      "precio_anterior": 1825.77,
+      "fecha_anterior": null
+    },
+    {
+      "id": "SOL",
+      "nombre": "Solana",
+      "tipo": "Cripto",
+      "precio": 73.0,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": -0.0191,
+      "base": "24h",
+      "precio_anterior": 74.4214,
+      "fecha_anterior": null
+    },
+    {
+      "id": "XRP",
+      "nombre": "XRP",
+      "tipo": "Cripto",
+      "precio": 0.9267,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": -0.007,
+      "base": "24h",
+      "precio_anterior": 0.9332,
+      "fecha_anterior": null
+    },
+    {
+      "id": "LINK",
+      "nombre": "Chainlink",
+      "tipo": "Cripto",
+      "precio": 9.04,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": 0.0042,
+      "base": "24h",
+      "precio_anterior": 9.0022,
+      "fecha_anterior": null
+    },
+    {
+      "id": "RENDER",
+      "nombre": "Render",
+      "tipo": "Cripto",
+      "precio": 1.39,
+      "divisa": "EUR",
+      "fecha": "2026-11-13",
+      "cambio": 0.0294,
+      "base": "24h",
+      "precio_anterior": 1.3503,
+      "fecha_anterior": null
+    },
+    {
+      "id": "EURCAD",
+      "nombre": "Dólares canadienses por euro",
+      "tipo": "Divisa",
+      "precio": 1.5755,
+      "divisa": "CAD",
+      "fecha": "2026-11-13",
+      "cambio": -0.0001,
+      "base": "día anterior",
+      "precio_anterior": 1.5757,
+      "fecha_anterior": "2026-11-12"
+    },
+    {
+      "id": "EURUSD",
+      "nombre": "Dólares estadounidenses por euro",
+      "tipo": "Divisa",
+      "precio": 1.1051,
+      "divisa": "USD",
+      "fecha": "2026-11-13",
+      "cambio": -0.0006,
+      "base": "día anterior",
+      "precio_anterior": 1.1058,
+      "fecha_anterior": "2026-11-12"
+    }
+  ]
+}
