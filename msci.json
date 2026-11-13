@@ -3,19 +3,14 @@
   "isin": "IE00B4L5Y983",
   "ticker": "EUNL",
   "fuente": "Yahoo Finance (EUNL.DE)",
-  "fecha": "2026-11-12",
-  "cierre": 131.63,
-  "fecha_anterior": "2026-11-11",
-  "cierre_anterior": 130.955,
+  "fecha": "2026-11-13",
+  "cierre": 130.395,
+  "fecha_anterior": "2026-11-12",
+  "cierre_anterior": 131.63,
   "max_52s": 132.25,
   "fecha_max_52s": "2026-10-12",
-  "caida_hoy": 0.0047,
-  "caida_ayer": 0.0098,
+  "caida_hoy": 0.014,
+  "caida_ayer": 0.0047,
   "nivel_cruzado": null,
-  "nota": "Caídas medidas con cierres diarios frente al cierre más alto de las 52 semanas anteriores. 'caida_hoy' usa el último cierre completo y 'caida_ayer' el anterior.",
-  "en_curso": {
-    "fecha": "2026-11-13",
-    "precio": 129.985,
-    "caida": 0.0171
-  }
+  "nota": "Caídas medidas con cierres diarios frente al cierre más alto de las 52 semanas anteriores. 'caida_hoy' usa el último cierre completo y 'caida_ayer' el anterior."
 }
