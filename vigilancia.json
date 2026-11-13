@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T10:29:11+01:00",
+  "actualizado": "2026-11-13T11:30:31+01:00",
   "regla": "Entrada solo si el último cierre está por encima de la media de 200 sesiones y es el más alto de las últimas 20 sesiones. Stop orientativo: el mínimo de las últimas 10 sesiones, pero nunca más de un 8 % por debajo del cierre. Salida: cierre por debajo del mínimo de cierre de las 20 sesiones anteriores.",
   "nota": "Calculado con cierres diarios sin ajustar por dividendos (como los gráficos del bróker), solo con sesiones ya cerradas. 'en_curso' es el precio de la sesión abierta, si la hay. 'stop_orientativo' supone entrar al último cierre.",
   "valores": [
@@ -58,7 +58,7 @@
       "fuente": "Yahoo Finance (IAG.MC)",
       "en_curso": {
         "fecha": "2026-11-13",
-        "precio": 5.392
+        "precio": 5.418
       }
     },
     {
@@ -89,7 +89,7 @@
       "fuente": "Yahoo Finance (AMS.MC)",
       "en_curso": {
         "fecha": "2026-11-13",
-        "precio": 62.34
+        "precio": 62.52
       }
     },
     {
@@ -120,7 +120,7 @@
       "fuente": "Yahoo Finance (REP.MC)",
       "en_curso": {
         "fecha": "2026-11-13",
-        "precio": 30.45
+        "precio": 30.35
       }
     },
     {
@@ -151,7 +151,7 @@
       "fuente": "Yahoo Finance (IDR.MC)",
       "en_curso": {
         "fecha": "2026-11-13",
-        "precio": 57.88
+        "precio": 58.22
       }
     }
   ],
