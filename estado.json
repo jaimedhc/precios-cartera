@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T23:39:10+01:00",
+  "actualizado": "2026-11-14T00:36:08+01:00",
   "activos": {
     "IE00BYX5NX33": {
       "fallos": [],
@@ -56,45 +56,45 @@
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ethereum",
-      "hora": "2026-11-13T23:38:39+01:00",
-      "cambio_24h": -0.0388,
-      "cambio_vs_anterior": 0.0007
+      "hora": "2026-11-14T00:35:19+01:00",
+      "cambio_24h": -0.0425,
+      "cambio_vs_anterior": -0.0011
     },
     "SOL": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "solana",
-      "hora": "2026-11-13T23:38:28+01:00",
-      "cambio_24h": -0.0338,
-      "cambio_vs_anterior": -0.011
+      "hora": "2026-11-14T00:35:33+01:00",
+      "cambio_24h": -0.0435,
+      "cambio_vs_anterior": -0.0059
     },
     "XRP": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ripple",
-      "hora": "2026-11-13T23:38:43+01:00",
-      "cambio_24h": -0.0207,
-      "cambio_vs_anterior": 0.0002
+      "hora": "2026-11-14T00:35:33+01:00",
+      "cambio_24h": -0.028,
+      "cambio_vs_anterior": -0.0026
     },
     "LINK": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "chainlink",
-      "hora": "2026-11-13T23:38:39+01:00",
-      "cambio_24h": -0.0242,
-      "cambio_vs_anterior": -0.0078
+      "hora": "2026-11-14T00:35:41+01:00",
+      "cambio_24h": -0.0284,
+      "cambio_vs_anterior": 0.0011
     },
     "RENDER": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "render-token",
-      "hora": "2026-11-13T23:38:39+01:00",
-      "cambio_24h": 0.0118,
-      "cambio_vs_anterior": 0.0
+      "hora": "2026-11-14T00:35:41+01:00",
+      "cambio_24h": 0.0023,
+      "cambio_vs_anterior": -0.0072
     },
     "EURCAD": {
       "fallos": [],
@@ -110,7 +110,7 @@
       "fuente": "Yahoo Finance",
       "simbolo": "EURUSD=X",
       "hora": "2026-11-13T23:29:33+01:00",
-      "cambio_vs_anterior": 0.0004
+      "cambio_vs_anterior": 0.0
     }
   },
   "errores": [],
