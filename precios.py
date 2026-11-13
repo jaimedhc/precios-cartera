@@ -11,6 +11,9 @@ una funciona. Escribe cuatro ficheros:
 - vigilancia.json: para cada valor de vigilancia_lista.json, los datos de la
   regla de entrada del tramo a corto plazo (media de 200 sesiones, máximo de
   20 sesiones, mínimo de 10 y stop orientativo).
+- historial.json: el último precio de cada día de cada activo (15 días).
+- cambios.json: variación de cada activo, en 24 horas para las criptomonedas
+  (CoinGecko) y frente al último precio del día anterior para el resto.
 - estado.json: de dónde salió cada precio, a qué hora y qué falló.
 
 Si todas las fuentes de un activo fallan, conserva su precio anterior.
@@ -228,6 +231,7 @@ def precios_coingecko(ids):
             "ids": ",".join(ids),
             "vs_currencies": "eur",
             "include_last_updated_at": "true",
+            "include_24hr_change": "true",
         },
     )
     return respuesta.json()
@@ -238,6 +242,7 @@ def precio_coingecko(id_moneda, cache):
     if "eur" not in datos:
         raise ValueError(f"CoinGecko no devolvió {id_moneda}")
     hora = hora_desde_epoch(datos.get("last_updated_at"))
+    cambio = datos.get("eur_24h_change")
     return {
         "precio": float(datos["eur"]),
         "fecha": (hora or ahora().isoformat())[:10],
@@ -245,6 +250,7 @@ def precio_coingecko(id_moneda, cache):
         "hora": hora,
         "simbolo": id_moneda,
         "fuente": "CoinGecko",
+        "cambio_24h": round(float(cambio) / 100, 4) if cambio is not None else None,
     }
 
 
@@ -374,6 +380,8 @@ def actualizar_activos(activos, anteriores, estado):
                 simbolo=resultado.get("simbolo"),
                 hora=resultado.get("hora"),
             )
+            if resultado.get("cambio_24h") is not None:
+                info["cambio_24h"] = resultado["cambio_24h"]
             if previo and previo.get("precio"):
                 cambio = fila["precio"] / float(previo["precio"]) - 1
                 info["cambio_vs_anterior"] = round(cambio, 4)
@@ -594,6 +602,61 @@ def datos_vigilancia():
     }
 
 
+# ---------------------------------------------------------------- variación diaria
+
+DIAS_HISTORIAL = 15
+
+
+def actualizar_historial(filas, historial):
+    """Guarda el último precio de cada día de cada activo (15 días como mucho)."""
+    for fila in filas:
+        serie = historial.setdefault(fila["id"], [])
+        punto = [fila["fecha"], fila["precio"]]
+        if serie and serie[-1][0] == fila["fecha"]:
+            serie[-1] = punto
+        elif not serie or fila["fecha"] > serie[-1][0]:
+            serie.append(punto)
+        del serie[:-DIAS_HISTORIAL]
+    return historial
+
+
+def datos_cambios(filas, historial, estado):
+    activos = []
+    for fila in filas:
+        dato = {clave: fila[clave] for clave in ("id", "nombre", "tipo", "precio", "divisa", "fecha")}
+        cambio_24h = (estado["activos"].get(fila["id"]) or {}).get("cambio_24h")
+        anterior = next(
+            (p for p in reversed(historial.get(fila["id"], [])) if p[0] < fila["fecha"]), None
+        )
+        if cambio_24h is not None and fila.get("fuente") == "CoinGecko":
+            dato.update(
+                cambio=cambio_24h,
+                base="24h",
+                precio_anterior=redondear(fila["precio"] / (1 + cambio_24h)),
+                fecha_anterior=None,
+            )
+        elif anterior and float(anterior[1]) > 0:
+            dato.update(
+                cambio=round(fila["precio"] / float(anterior[1]) - 1, 4),
+                base="día anterior",
+                precio_anterior=anterior[1],
+                fecha_anterior=anterior[0],
+            )
+        else:
+            dato.update(cambio=None, base=None, precio_anterior=None, fecha_anterior=None)
+        activos.append(dato)
+    return {
+        "actualizado": ahora().isoformat(),
+        "nota": (
+            "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según "
+            "CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene "
+            "el programa (valor liquidativo anterior en los fondos, cierre anterior en las "
+            "acciones y el ETC)."
+        ),
+        "activos": activos,
+    }
+
+
 # ---------------------------------------------------------------- principal
 
 def main():
@@ -603,6 +666,13 @@ def main():
 
     filas = actualizar_activos(activos, anteriores, estado)
     escribir_json("precios.json", filas)
+
+    try:
+        historial = actualizar_historial(filas, leer_json("historial.json", {}))
+        escribir_json("historial.json", historial)
+        escribir_json("cambios.json", datos_cambios(filas, historial, estado))
+    except Exception as error:  # noqa: BLE001
+        estado["errores"].append(f"Cambios: {error}")
 
     try:
         escribir_json("msci.json", datos_msci())

@@ -11,6 +11,8 @@ actualizar el panel de la cartera.
 | `precios.json` | Último precio de cada activo, con su fecha y su fuente. |
 | `msci.json` | Cierres del iShares Core MSCI World (EUNL, Xetra) y su caída desde el cierre más alto de 52 semanas, para el aviso de recompra. |
 | `vigilancia.json` | Para cada valor de `vigilancia_lista.json`: media de 200 sesiones, máximo de 20 sesiones, mínimo de 10, stop orientativo y si cumple la regla de entrada del tramo a corto plazo. |
+| `cambios.json` | Variación de cada activo: en 24 horas para las criptomonedas (CoinGecko) y frente al último precio del día anterior para el resto. |
+| `historial.json` | Último precio de cada día de cada activo, de los últimos 15 días. Sirve para calcular `cambios.json`. |
 | `estado.json` | De dónde salió cada precio, a qué hora y qué fuentes fallaron. |
 
 Solo hay precios: ninguna cantidad ni importe de la cartera.
