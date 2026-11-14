@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T04:43:43+01:00",
+  "actualizado": "2026-11-14T05:45:42+01:00",
   "activos": {
     "IE00BYX5NX33": {
       "fallos": [],
@@ -41,7 +41,7 @@
       "fuente": "Yahoo Finance",
       "simbolo": "SSLV.MI",
       "hora": "2026-11-13T17:24:40+01:00",
-      "cambio_vs_anterior": 0.0
+      "cambio_vs_anterior": -0.002
     },
     "CA2548481043": {
       "fallos": [],
@@ -56,45 +56,45 @@
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ethereum",
-      "hora": "2026-11-14T04:43:17+01:00",
-      "cambio_24h": -0.0305,
-      "cambio_vs_anterior": -0.007
+      "hora": "2026-11-14T05:44:58+01:00",
+      "cambio_24h": -0.0096,
+      "cambio_vs_anterior": 0.0056
     },
     "SOL": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "solana",
-      "hora": "2026-11-14T04:42:56+01:00",
-      "cambio_24h": -0.0434,
-      "cambio_vs_anterior": -0.0052
+      "hora": "2026-11-14T05:44:50+01:00",
+      "cambio_24h": -0.0308,
+      "cambio_vs_anterior": 0.0048
     },
     "XRP": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ripple",
-      "hora": "2026-11-14T04:43:09+01:00",
-      "cambio_24h": -0.0129,
-      "cambio_vs_anterior": -0.0045
+      "hora": "2026-11-14T05:45:12+01:00",
+      "cambio_24h": -0.0053,
+      "cambio_vs_anterior": 0.0021
     },
     "LINK": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "chainlink",
-      "hora": "2026-11-14T04:42:56+01:00",
-      "cambio_24h": -0.0152,
-      "cambio_vs_anterior": -0.0046
+      "hora": "2026-11-14T05:44:58+01:00",
+      "cambio_24h": -0.0007,
+      "cambio_vs_anterior": 0.0034
     },
     "RENDER": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "render-token",
-      "hora": "2026-11-14T04:43:17+01:00",
-      "cambio_24h": 0.029,
-      "cambio_vs_anterior": -0.0072
+      "hora": "2026-11-14T05:45:12+01:00",
+      "cambio_24h": 0.0433,
+      "cambio_vs_anterior": 0.0
     },
     "EURCAD": {
       "fallos": [],

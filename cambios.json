@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T04:43:37+01:00",
+  "actualizado": "2026-11-14T05:45:36+01:00",
   "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
   "activos": [
     {
@@ -54,10 +54,10 @@
       "id": "IE00B43VDT70",
       "nombre": "Plata física (ETC)",
       "tipo": "ETC",
-      "precio": 42.4,
+      "precio": 42.315,
       "divisa": "EUR",
       "fecha": "2026-11-13",
-      "cambio": -0.0169,
+      "cambio": -0.0189,
       "base": "día anterior",
       "precio_anterior": 43.13,
       "fecha_anterior": "2026-11-12"
@@ -78,48 +78,48 @@
       "id": "ETH",
       "nombre": "Ethereum",
       "tipo": "Cripto",
-      "precio": 1712.39,
+      "precio": 1722.06,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0305,
+      "cambio": -0.0096,
       "base": "24h",
-      "precio_anterior": 1766.26,
+      "precio_anterior": 1738.75,
       "fecha_anterior": null
     },
     {
       "id": "SOL",
       "nombre": "Solana",
       "tipo": "Cripto",
-      "precio": 68.22,
+      "precio": 68.55,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0434,
+      "cambio": -0.0308,
       "base": "24h",
-      "precio_anterior": 71.3151,
+      "precio_anterior": 70.7284,
       "fecha_anterior": null
     },
     {
       "id": "XRP",
       "nombre": "XRP",
       "tipo": "Cripto",
-      "precio": 0.9,
+      "precio": 0.9019,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0129,
+      "cambio": -0.0053,
       "base": "24h",
-      "precio_anterior": 0.9118,
+      "precio_anterior": 0.9067,
       "fecha_anterior": null
     },
     {
       "id": "LINK",
       "nombre": "Chainlink",
       "tipo": "Cripto",
-      "precio": 8.7,
+      "precio": 8.73,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0152,
+      "cambio": -0.0007,
       "base": "24h",
-      "precio_anterior": 8.8343,
+      "precio_anterior": 8.7361,
       "fecha_anterior": null
     },
     {
@@ -129,9 +129,9 @@
       "precio": 1.37,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": 0.029,
+      "cambio": 0.0433,
       "base": "24h",
-      "precio_anterior": 1.3314,
+      "precio_anterior": 1.3131,
       "fecha_anterior": null
     },
     {
