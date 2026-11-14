@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T09:43:37+01:00",
+  "actualizado": "2026-11-14T16:38:04+01:00",
   "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
   "activos": [
     {
@@ -8,11 +8,11 @@
       "tipo": "Fondo",
       "precio": 14.61,
       "divisa": "EUR",
-      "fecha": "2026-11-12",
-      "cambio": -0.0007,
+      "fecha": "2026-11-13",
+      "cambio": 0.0,
       "base": "día anterior",
-      "precio_anterior": 14.62,
-      "fecha_anterior": "2026-11-11"
+      "precio_anterior": 14.61,
+      "fecha_anterior": "2026-11-12"
     },
     {
       "id": "LU0625737910",
@@ -78,60 +78,60 @@
       "id": "ETH",
       "nombre": "Ethereum",
       "tipo": "Cripto",
-      "precio": 1721.23,
+      "precio": 1664.65,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0153,
+      "cambio": -0.0409,
       "base": "24h",
-      "precio_anterior": 1747.97,
+      "precio_anterior": 1735.64,
       "fecha_anterior": null
     },
     {
       "id": "SOL",
       "nombre": "Solana",
       "tipo": "Cripto",
-      "precio": 68.22,
+      "precio": 66.9,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0557,
+      "cambio": -0.0661,
       "base": "24h",
-      "precio_anterior": 72.244,
+      "precio_anterior": 71.6351,
       "fecha_anterior": null
     },
     {
       "id": "XRP",
       "nombre": "XRP",
       "tipo": "Cripto",
-      "precio": 0.8923,
+      "precio": 0.8819,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0406,
+      "cambio": -0.0391,
       "base": "24h",
-      "precio_anterior": 0.9301,
+      "precio_anterior": 0.9178,
       "fecha_anterior": null
     },
     {
       "id": "LINK",
       "nombre": "Chainlink",
       "tipo": "Cripto",
-      "precio": 8.67,
+      "precio": 8.4,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0316,
+      "cambio": -0.0551,
       "base": "24h",
-      "precio_anterior": 8.9529,
+      "precio_anterior": 8.8898,
       "fecha_anterior": null
     },
     {
       "id": "RENDER",
       "nombre": "Render",
       "tipo": "Cripto",
-      "precio": 1.35,
+      "precio": 1.34,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0147,
+      "cambio": -0.0174,
       "base": "24h",
-      "precio_anterior": 1.3701,
+      "precio_anterior": 1.3637,
       "fecha_anterior": null
     },
     {
