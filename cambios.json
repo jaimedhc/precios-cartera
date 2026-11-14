@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T08:54:46+01:00",
+  "actualizado": "2026-11-14T09:43:37+01:00",
   "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
   "activos": [
     {
@@ -78,36 +78,36 @@
       "id": "ETH",
       "nombre": "Ethereum",
       "tipo": "Cripto",
-      "precio": 1718.11,
+      "precio": 1721.23,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0185,
+      "cambio": -0.0153,
       "base": "24h",
-      "precio_anterior": 1750.49,
+      "precio_anterior": 1747.97,
       "fecha_anterior": null
     },
     {
       "id": "SOL",
       "nombre": "Solana",
       "tipo": "Cripto",
-      "precio": 68.16,
+      "precio": 68.22,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0554,
+      "cambio": -0.0557,
       "base": "24h",
-      "precio_anterior": 72.1575,
+      "precio_anterior": 72.244,
       "fecha_anterior": null
     },
     {
       "id": "XRP",
       "nombre": "XRP",
       "tipo": "Cripto",
-      "precio": 0.8905,
+      "precio": 0.8923,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0405,
+      "cambio": -0.0406,
       "base": "24h",
-      "precio_anterior": 0.9281,
+      "precio_anterior": 0.9301,
       "fecha_anterior": null
     },
     {
@@ -117,9 +117,9 @@
       "precio": 8.67,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0312,
+      "cambio": -0.0316,
       "base": "24h",
-      "precio_anterior": 8.9492,
+      "precio_anterior": 8.9529,
       "fecha_anterior": null
     },
     {
@@ -129,9 +129,9 @@
       "precio": 1.35,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0114,
+      "cambio": -0.0147,
       "base": "24h",
-      "precio_anterior": 1.3656,
+      "precio_anterior": 1.3701,
       "fecha_anterior": null
     },
     {

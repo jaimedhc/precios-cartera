@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T08:54:52+01:00",
+  "actualizado": "2026-11-14T09:43:42+01:00",
   "activos": {
     "IE00BYX5NX33": {
       "fallos": [],
@@ -56,45 +56,45 @@
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ethereum",
-      "hora": "2026-11-14T08:54:07+01:00",
-      "cambio_24h": -0.0185,
-      "cambio_vs_anterior": -0.0051
+      "hora": "2026-11-14T09:43:19+01:00",
+      "cambio_24h": -0.0153,
+      "cambio_vs_anterior": 0.0018
     },
     "SOL": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "solana",
-      "hora": "2026-11-14T08:54:07+01:00",
-      "cambio_24h": -0.0554,
-      "cambio_vs_anterior": -0.0051
+      "hora": "2026-11-14T09:43:08+01:00",
+      "cambio_24h": -0.0557,
+      "cambio_vs_anterior": 0.0009
     },
     "XRP": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ripple",
-      "hora": "2026-11-14T08:53:59+01:00",
-      "cambio_24h": -0.0405,
-      "cambio_vs_anterior": -0.0117
+      "hora": "2026-11-14T09:42:53+01:00",
+      "cambio_24h": -0.0406,
+      "cambio_vs_anterior": 0.002
     },
     "LINK": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "chainlink",
-      "hora": "2026-11-14T08:54:25+01:00",
-      "cambio_24h": -0.0312,
-      "cambio_vs_anterior": -0.008
+      "hora": "2026-11-14T09:43:01+01:00",
+      "cambio_24h": -0.0316,
+      "cambio_vs_anterior": 0.0
     },
     "RENDER": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "render-token",
-      "hora": "2026-11-14T08:54:13+01:00",
-      "cambio_24h": -0.0114,
-      "cambio_vs_anterior": -0.0146
+      "hora": "2026-11-14T09:43:01+01:00",
+      "cambio_24h": -0.0147,
+      "cambio_vs_anterior": 0.0
     },
     "EURCAD": {
       "fallos": [],
