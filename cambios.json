@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T01:47:06+01:00",
+  "actualizado": "2026-11-14T02:55:45+01:00",
   "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
   "activos": [
     {
@@ -78,48 +78,48 @@
       "id": "ETH",
       "nombre": "Ethereum",
       "tipo": "Cripto",
-      "precio": 1749.43,
+      "precio": 1748.44,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0362,
+      "cambio": -0.037,
       "base": "24h",
-      "precio_anterior": 1815.14,
+      "precio_anterior": 1815.62,
       "fecha_anterior": null
     },
     {
       "id": "SOL",
       "nombre": "Solana",
       "tipo": "Cripto",
-      "precio": 70.68,
+      "precio": 69.95,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0384,
+      "cambio": -0.0474,
       "base": "24h",
-      "precio_anterior": 73.5025,
+      "precio_anterior": 73.4306,
       "fecha_anterior": null
     },
     {
       "id": "XRP",
       "nombre": "XRP",
       "tipo": "Cripto",
-      "precio": 0.9173,
+      "precio": 0.9122,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0168,
+      "cambio": -0.0204,
       "base": "24h",
-      "precio_anterior": 0.933,
+      "precio_anterior": 0.9312,
       "fecha_anterior": null
     },
     {
       "id": "LINK",
       "nombre": "Chainlink",
       "tipo": "Cripto",
-      "precio": 8.94,
+      "precio": 8.87,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": -0.0196,
+      "cambio": -0.0259,
       "base": "24h",
-      "precio_anterior": 9.1187,
+      "precio_anterior": 9.1058,
       "fecha_anterior": null
     },
     {
@@ -129,9 +129,9 @@
       "precio": 1.39,
       "divisa": "EUR",
       "fecha": "2026-11-14",
-      "cambio": 0.0189,
+      "cambio": 0.0103,
       "base": "24h",
-      "precio_anterior": 1.3642,
+      "precio_anterior": 1.3758,
       "fecha_anterior": null
     },
     {
