@@ -569,6 +569,7 @@ def analisis_tecnico(valor):
         "max_3_previo": redondear(max_3_previo),
         "giro": giro,
         "senal_entrada": en_caida and giro,
+        "rebote_desde_minimo_20": round(cierre / min(cierres[-20:]) - 1, 4),
         "min_10": redondear(min_10),
         "stop_orientativo": redondear(stop),
         "distancia_stop": round(stop / cierre - 1, 4),
