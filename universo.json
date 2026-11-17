@@ -1,0 +1,71 @@
+{
+  "descripcion": "Empresas que revisa el escáner de oportunidades (regla de compra en caída). Símbolos de Yahoo Finance. Para añadir o quitar una, edita esta lista.",
+  "mercados": {
+    "Nasdaq": {
+      "zona": "America/New_York",
+      "divisa": "USD",
+      "valores": {
+        "AAPL": "Apple", "MSFT": "Microsoft", "NVDA": "NVIDIA", "AMZN": "Amazon", "META": "Meta Platforms",
+        "AVGO": "Broadcom", "GOOGL": "Alphabet", "TSLA": "Tesla", "COST": "Costco", "NFLX": "Netflix",
+        "PLTR": "Palantir", "AMD": "AMD", "ASML": "ASML", "CSCO": "Cisco", "TMUS": "T-Mobile US",
+        "AZN": "AstraZeneca", "PEP": "PepsiCo", "LIN": "Linde", "INTU": "Intuit", "ISRG": "Intuitive Surgical",
+        "TXN": "Texas Instruments", "QCOM": "Qualcomm", "AMGN": "Amgen", "BKNG": "Booking", "ADBE": "Adobe",
+        "PDD": "PDD Holdings", "AMAT": "Applied Materials", "ARM": "Arm Holdings", "HON": "Honeywell", "GILD": "Gilead",
+        "CMCSA": "Comcast", "PANW": "Palo Alto Networks", "MU": "Micron", "LRCX": "Lam Research", "ADP": "ADP",
+        "KLAC": "KLA", "APP": "AppLovin", "MELI": "MercadoLibre", "CRWD": "CrowdStrike", "ADI": "Analog Devices",
+        "SBUX": "Starbucks", "VRTX": "Vertex", "CEG": "Constellation Energy", "MSTR": "Strategy", "INTC": "Intel",
+        "DASH": "DoorDash", "CTAS": "Cintas", "SNPS": "Synopsys", "CDNS": "Cadence", "ORLY": "O'Reilly",
+        "FTNT": "Fortinet", "MDLZ": "Mondelez", "ABNB": "Airbnb", "MAR": "Marriott", "PYPL": "PayPal",
+        "REGN": "Regeneron", "MRVL": "Marvell", "WDAY": "Workday", "CSX": "CSX", "ADSK": "Autodesk",
+        "AEP": "American Electric Power", "MNST": "Monster Beverage", "CHTR": "Charter", "NXPI": "NXP", "PCAR": "Paccar",
+        "ROP": "Roper", "AXON": "Axon", "TEAM": "Atlassian", "FAST": "Fastenal", "PAYX": "Paychex",
+        "KDP": "Keurig Dr Pepper", "DDOG": "Datadog", "ZS": "Zscaler", "EXC": "Exelon", "ROST": "Ross Stores",
+        "CPRT": "Copart", "IDXX": "Idexx", "CCEP": "Coca-Cola Europacific", "FANG": "Diamondback Energy", "VRSK": "Verisk",
+        "BKR": "Baker Hughes", "XEL": "Xcel Energy", "TTWO": "Take-Two", "EA": "Electronic Arts", "CTSH": "Cognizant",
+        "GEHC": "GE HealthCare", "KHC": "Kraft Heinz", "LULU": "Lululemon", "ODFL": "Old Dominion", "CSGP": "CoStar",
+        "DXCM": "Dexcom", "ON": "ON Semiconductor", "TTD": "The Trade Desk", "BIIB": "Biogen", "CDW": "CDW",
+        "GFS": "GlobalFoundries", "WBD": "Warner Bros. Discovery", "MDB": "MongoDB", "SHOP": "Shopify", "TRI": "Thomson Reuters",
+        "MCHP": "Microchip", "COIN": "Coinbase", "HOOD": "Robinhood", "CRWV": "CoreWeave"
+      }
+    },
+    "NYSE": {
+      "zona": "America/New_York",
+      "divisa": "USD",
+      "valores": {
+        "UBER": "Uber", "NOW": "ServiceNow", "CRM": "Salesforce", "ORCL": "Oracle", "SNOW": "Snowflake",
+        "NET": "Cloudflare", "SPOT": "Spotify", "XYZ": "Block", "LLY": "Eli Lilly", "UNH": "UnitedHealth",
+        "NKE": "Nike", "DIS": "Disney", "V": "Visa", "MA": "Mastercard", "TSM": "TSMC",
+        "ANET": "Arista Networks", "BABA": "Alibaba", "NVO": "Novo Nordisk"
+      }
+    },
+    "Bolsa de Madrid": {
+      "zona": "Europe/Madrid",
+      "divisa": "EUR",
+      "valores": {
+        "ANA.MC": "Acciona", "ANE.MC": "Acciona Energía", "ACX.MC": "Acerinox", "ACS.MC": "ACS", "AENA.MC": "Aena",
+        "AMS.MC": "Amadeus", "MTS.MC": "ArcelorMittal", "SAB.MC": "Banco Sabadell", "SAN.MC": "Banco Santander", "BKT.MC": "Bankinter",
+        "BBVA.MC": "BBVA", "CABK.MC": "CaixaBank", "CLNX.MC": "Cellnex", "COL.MC": "Colonial", "ENG.MC": "Enagás",
+        "ELE.MC": "Endesa", "FER.MC": "Ferrovial", "FDR.MC": "Fluidra", "GRF.MC": "Grifols", "IAG.MC": "IAG",
+        "IBE.MC": "Iberdrola", "ITX.MC": "Inditex", "IDR.MC": "Indra", "LOG.MC": "Logista", "MAP.MC": "Mapfre",
+        "MEL.MC": "Meliá", "MRL.MC": "Merlin Properties", "NTGY.MC": "Naturgy", "PUIG.MC": "Puig", "RED.MC": "Redeia",
+        "REP.MC": "Repsol", "ROVI.MC": "Rovi", "SCYR.MC": "Sacyr", "SLR.MC": "Solaria", "TEF.MC": "Telefónica",
+        "UNI.MC": "Unicaja"
+      }
+    },
+    "Xetra": {
+      "zona": "Europe/Berlin",
+      "divisa": "EUR",
+      "valores": {
+        "ADS.DE": "Adidas", "AIR.DE": "Airbus", "ALV.DE": "Allianz", "BAS.DE": "BASF", "BAYN.DE": "Bayer",
+        "BEI.DE": "Beiersdorf", "BMW.DE": "BMW", "BNR.DE": "Brenntag", "CBK.DE": "Commerzbank", "CON.DE": "Continental",
+        "DTG.DE": "Daimler Truck", "DBK.DE": "Deutsche Bank", "DB1.DE": "Deutsche Börse", "DHL.DE": "DHL Group", "DTE.DE": "Deutsche Telekom",
+        "EOAN.DE": "E.ON", "FRE.DE": "Fresenius", "FME.DE": "Fresenius Medical Care", "G1A.DE": "GEA", "HNR1.DE": "Hannover Rück",
+        "HEI.DE": "Heidelberg Materials", "HEN3.DE": "Henkel", "IFX.DE": "Infineon", "MBG.DE": "Mercedes-Benz", "MRK.DE": "Merck KGaA",
+        "MTX.DE": "MTU Aero Engines", "MUV2.DE": "Munich Re", "P911.DE": "Porsche", "QIA.DE": "Qiagen", "RHM.DE": "Rheinmetall",
+        "RWE.DE": "RWE", "SAP.DE": "SAP", "SRT3.DE": "Sartorius", "SIE.DE": "Siemens", "ENR.DE": "Siemens Energy",
+        "SHL.DE": "Siemens Healthineers", "SY1.DE": "Symrise", "VOW3.DE": "Volkswagen", "VNA.DE": "Vonovia", "ZAL.DE": "Zalando",
+        "G24.DE": "Scout24"
+      }
+    }
+  }
+}

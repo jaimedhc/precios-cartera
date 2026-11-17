@@ -11,6 +11,7 @@ actualizar el panel de la cartera.
 | `precios.json` | Último precio de cada activo, con su fecha y su fuente. |
 | `msci.json` | Cierres del iShares Core MSCI World (EUNL, Xetra) y su caída desde el cierre más alto de 52 semanas, para el aviso de recompra. |
 | `vigilancia.json` | Para cada valor de `vigilancia_lista.json`: caída desde su máximo de 52 semanas, si ha dejado de caer (cierre por encima de los 3 anteriores), mínimo de 10 sesiones, stop orientativo, media de 200 sesiones y si cumple la regla de compra en caída del tramo a corto plazo. |
+| `escaner.json` | Cada 6 horas, las empresas de `universo.json` (Nasdaq 100, grandes de NYSE, IBEX 35 y DAX 40) que están al menos un 20 % por debajo de su máximo de 52 semanas, con las que ya han dejado de caer primero. |
 | `cambios.json` | Variación de cada activo: en 24 horas para las criptomonedas (CoinGecko) y frente al último precio del día anterior para el resto. |
 | `historial.json` | Último precio de cada día de cada activo, de los últimos 15 días. Sirve para calcular `cambios.json`. |
 | `estado.json` | De dónde salió cada precio, a qué hora y qué fuentes fallaron. |

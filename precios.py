@@ -20,6 +20,7 @@ Si todas las fuentes de un activo fallan, conserva su precio anterior.
 Nunca sustituye un precio por otro más antiguo.
 """
 
+import hashlib
 import json
 import re
 import sys
@@ -659,6 +660,127 @@ def datos_cambios(filas, historial, estado):
     }
 
 
+# ---------------------------------------------------------------- escáner de oportunidades
+
+ESCANER_HORAS = 6
+NOTA_ESCANER = (
+    "Solo aparecen los valores al menos un 20 % por debajo de su cierre más alto de 52 "
+    "semanas. 'senal_entrada': ha dejado de caer (cierra por encima de los cierres de las "
+    "3 sesiones anteriores). Antes de proponer uno hay que comprobar aparte que la empresa "
+    "crece, que está barata frente a lo esperado y que no presenta resultados en 3 días "
+    "hábiles. 'rebote_desde_minimo_20': cuánto ha subido desde el cierre más bajo de las "
+    "últimas 20 sesiones."
+)
+
+
+def analisis_escaner(simbolo, tabla, nombre, mercado, zona, divisa):
+    import pandas as pd
+
+    tabla = tabla.dropna(subset=["Close"])
+    if tabla.empty:
+        raise ValueError("sin datos")
+    fechas = [pd.Timestamp(indice).date() for indice in tabla.index]
+    cierres = [float(c) for c in tabla["Close"]]
+    minimos = [float(m) for m in tabla["Low"].fillna(tabla["Close"])]
+    momento = datetime.now(ZoneInfo(zona))
+    hora, minuto = CIERRE_LOCAL.get(zona, (18, 0))
+    if fechas[-1] >= momento.date() and (momento.hour, momento.minute) < (hora, minuto):
+        fechas, cierres, minimos = fechas[:-1], cierres[:-1], minimos[:-1]
+    if len(cierres) < 200:
+        raise ValueError(f"solo hay {len(cierres)} sesiones")
+
+    cierre = cierres[-1]
+    desde = fechas[-1] - timedelta(days=365)
+    f_max, c_max = max(
+        ((f, c) for f, c in zip(fechas, cierres) if f > desde), key=lambda par: par[1]
+    )
+    caida = 1 - cierre / c_max
+    if caida < CAIDA_MINIMA:
+        return None
+    max_3_previo = max(cierres[-4:-1])
+    giro = cierre > max_3_previo
+    stop = max(min(minimos[-10:]), cierre * 0.92)
+    media_200 = sum(cierres[-200:]) / 200
+    return {
+        "simbolo": simbolo,
+        "nombre": nombre,
+        "mercado": mercado,
+        "divisa": divisa,
+        "fecha": fechas[-1].isoformat(),
+        "cierre": redondear(cierre),
+        "cambio_1d": round(cierre / cierres[-2] - 1, 4),
+        "max_52s": redondear(c_max),
+        "fecha_max_52s": f_max.isoformat(),
+        "caida_desde_max_52s": round(caida, 4),
+        "max_3_previo": redondear(max_3_previo),
+        "senal_entrada": giro,
+        "rebote_desde_minimo_20": round(cierre / min(cierres[-20:]) - 1, 4),
+        "stop_orientativo": redondear(stop),
+        "distancia_stop": round(stop / cierre - 1, 4),
+        "media_200": redondear(media_200),
+        "distancia_media_200": round(cierre / media_200 - 1, 4),
+    }
+
+
+def escanear_universo():
+    """Revisa todo universo.json con la regla de compra en caída (cada 6 horas)."""
+    universo = leer_json("universo.json", {})
+    simbolos = {}
+    for mercado, datos in universo.get("mercados", {}).items():
+        for simbolo, nombre in datos.get("valores", {}).items():
+            simbolos[simbolo] = (nombre, mercado, datos.get("zona", "America/New_York"), datos.get("divisa"))
+    if not simbolos:
+        return None
+    firma = hashlib.md5(",".join(sorted(simbolos)).encode()).hexdigest()[:12]
+    previo = leer_json("escaner.json", {})
+    if previo.get("firma") == firma and previo.get("actualizado"):
+        try:
+            hace = ahora() - datetime.fromisoformat(previo["actualizado"])
+        except ValueError:
+            hace = timedelta(days=1)
+        if hace < timedelta(hours=ESCANER_HORAS):
+            return None
+
+    lista = list(simbolos)
+    en_caida, fallos, analizados = [], [], 0
+    for inicio in range(0, len(lista), 40):
+        trozo = lista[inicio:inicio + 40]
+        try:
+            tabla = yf().download(
+                trozo, period="14mo", interval="1d", group_by="ticker",
+                auto_adjust=False, threads=True, progress=False,
+            )
+        except Exception as error:  # noqa: BLE001
+            fallos.extend(f"{simbolo}: {str(error)[:120]}" for simbolo in trozo)
+            continue
+        varios = getattr(tabla.columns, "nlevels", 1) > 1
+        presentes = set(tabla.columns.get_level_values(0)) if varios else set(trozo)
+        for simbolo in trozo:
+            try:
+                if simbolo not in presentes:
+                    raise ValueError("sin datos")
+                datos = analisis_escaner(simbolo, tabla[simbolo] if varios else tabla, *simbolos[simbolo])
+                analizados += 1
+                if datos:
+                    en_caida.append(datos)
+            except Exception as error:  # noqa: BLE001
+                fallos.append(f"{simbolo}: {str(error)[:120]}")
+        time.sleep(2)
+
+    en_caida.sort(key=lambda d: (not d["senal_entrada"], -d["caida_desde_max_52s"]))
+    return {
+        "actualizado": ahora().isoformat(),
+        "firma": firma,
+        "regla": REGLA_ENTRADA,
+        "nota": NOTA_ESCANER,
+        "total": len(lista),
+        "analizados": analizados,
+        "con_senal": sum(1 for d in en_caida if d["senal_entrada"]),
+        "en_caida": en_caida,
+        "fallos": fallos,
+    }
+
+
 # ---------------------------------------------------------------- principal
 
 def main():
@@ -692,6 +814,20 @@ def main():
     except Exception as error:  # noqa: BLE001
         estado["vigilancia"] = {"ok": 0, "fallo": str(error)[:300]}
         estado["errores"].append(f"Vigilancia: {error}")
+
+    try:
+        escaner = escanear_universo()
+        if escaner is not None:
+            escribir_json("escaner.json", escaner)
+            estado["escaner"] = {
+                "analizados": escaner["analizados"],
+                "total": escaner["total"],
+                "en_caida": len(escaner["en_caida"]),
+                "con_senal": escaner["con_senal"],
+                "fallos": len(escaner["fallos"]),
+            }
+    except Exception as error:  # noqa: BLE001
+        estado["errores"].append(f"Escáner: {error}")
 
     estado["actualizado"] = ahora().isoformat()
     escribir_json("estado.json", estado)

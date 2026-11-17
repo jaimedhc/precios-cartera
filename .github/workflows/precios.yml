@@ -10,6 +10,7 @@ on:
       - "precios.py"
       - "activos.json"
       - "vigilancia_lista.json"
+      - "universo.json"
       - "requirements.txt"
       - ".github/workflows/precios.yml"
 
@@ -23,7 +24,7 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -42,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add precios.json msci.json estado.json vigilancia.json historial.json cambios.json
+          git add precios.json msci.json estado.json vigilancia.json historial.json cambios.json $(ls escaner.json 2>/dev/null)
           if git diff --cached --quiet; then
             echo "Sin cambios"
             exit 0
