@@ -12,16 +12,16 @@
     "id": "LU0625737910",
     "nombre": "Pictet China Index",
     "tipo": "Fondo",
-    "precio": 124.68,
+    "precio": 125.07,
     "divisa": "EUR",
-    "fecha": "2026-11-13",
+    "fecha": "2026-11-16",
     "fuente": "FT Markets"
   },
   {
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 84.446,
+    "precio": 84.32,
     "divisa": "EUR",
     "fecha": "2026-11-17",
     "fuente": "Yahoo Finance"
@@ -30,16 +30,16 @@
     "id": "IE000QAZP7L2",
     "nombre": "iShares Emerging Markets (S Acc EUR)",
     "tipo": "Fondo",
-    "precio": 13.27,
+    "precio": 12.93,
     "divisa": "EUR",
-    "fecha": "2026-11-13",
+    "fecha": "2026-11-16",
     "fuente": "FT Markets"
   },
   {
     "id": "IE00B43VDT70",
     "nombre": "Plata física (ETC)",
     "tipo": "ETC",
-    "precio": 41.175,
+    "precio": 41.215,
     "divisa": "EUR",
     "fecha": "2026-11-17",
     "fuente": "Yahoo Finance"
@@ -50,14 +50,14 @@
     "tipo": "Acción",
     "precio": 0.35,
     "divisa": "CAD",
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-17",
     "fuente": "Yahoo Finance"
   },
   {
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1656.49,
+    "precio": 1651.37,
     "divisa": "EUR",
     "fecha": "2026-11-17",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 67.0,
+    "precio": 67.16,
     "divisa": "EUR",
     "fecha": "2026-11-17",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.8832,
+    "precio": 0.8846,
     "divisa": "EUR",
     "fecha": "2026-11-17",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 8.43,
+    "precio": 8.47,
     "divisa": "EUR",
     "fecha": "2026-11-17",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5715,
+    "precio": 1.5708,
     "divisa": "CAD",
     "fecha": "2026-11-17",
     "fuente": "Yahoo Finance"
