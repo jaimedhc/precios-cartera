@@ -497,6 +497,7 @@ CIERRE_LOCAL = {
     "America/New_York": (16, 15),
     "Europe/Madrid": (17, 50),
     "Europe/Berlin": (17, 50),
+    "Europe/London": (16, 45),
 }
 
 
@@ -523,8 +524,8 @@ def sesion_terminada(fecha_barra, meta):
 
 def analisis_tecnico(valor):
     tabla, meta = historial_yahoo(valor["simbolo"], periodo="14mo")
-    moneda = (meta.get("currency") or "").upper() or None
-    if valor.get("divisa") and moneda and moneda != valor["divisa"]:
+    moneda = meta.get("currency") or None  # "GBp" = peniques: se conserva tal cual
+    if valor.get("divisa") and moneda and moneda.upper() != valor["divisa"].upper():
         raise ValueError(f"cotiza en {moneda}, esperaba {valor['divisa']}")
     fechas = [indice.date() for indice in tabla.index]
     cierres = [float(c) for c in tabla["Close"]]
