@@ -9,8 +9,8 @@ una funciona. Escribe cuatro ficheros:
 - msci.json: cierres del iShares Core MSCI World (EUNL, Xetra) y su caída
   desde el cierre más alto de 52 semanas, para el aviso de recompra.
 - vigilancia.json: para cada valor de vigilancia_lista.json, los datos de la
-  regla de entrada del tramo a corto plazo (media de 200 sesiones, máximo de
-  20 sesiones, mínimo de 10 y stop orientativo).
+  regla de compra en caída del tramo a corto plazo (caída desde el máximo de
+  52 semanas, giro, mínimo de 10 sesiones, stop orientativo y media de 200).
 - historial.json: el último precio de cada día de cada activo (15 días).
 - cambios.json: variación de cada activo, en 24 horas para las criptomonedas
   (CoinGecko) y frente al último precio del día anterior para el resto.
@@ -479,11 +479,15 @@ def datos_msci():
 
 # ---------------------------------------------------------------- lista de vigilancia
 
+CAIDA_MINIMA = 0.20
+
 REGLA_ENTRADA = (
-    "Entrada solo si el último cierre está por encima de la media de 200 sesiones "
-    "y es el más alto de las últimas 20 sesiones. Stop orientativo: el mínimo de "
-    "las últimas 10 sesiones, pero nunca más de un 8 % por debajo del cierre. "
-    "Salida: cierre por debajo del mínimo de cierre de las 20 sesiones anteriores."
+    "Compra en caída: entrada solo si el último cierre está al menos un 20 % por debajo "
+    "del cierre más alto del último año y es más alto que los cierres de las 3 sesiones "
+    "anteriores (ha dejado de caer). Stop orientativo: el mínimo de las últimas 10 "
+    "sesiones, pero nunca más de un 8 % por debajo del cierre. La media de 200 sesiones "
+    "es solo una referencia de hasta dónde suele llegar un rebote. El crecimiento del "
+    "negocio, la valoración y la fecha de resultados se comprueban aparte."
 )
 
 # Hora local a partir de la cual el cierre del día ya es definitivo, por si
@@ -534,16 +538,16 @@ def analisis_tecnico(valor):
 
     cierre = cierres[-1]
     media_200 = sum(cierres[-200:]) / 200
-    max_20 = max(cierres[-20:])
-    min_20_previo = min(cierres[-21:-1])
+    max_3_previo = max(cierres[-4:-1])
     min_10 = min(minimos[-10:])
     stop = max(min_10, cierre * 0.92)
     desde = fechas[-1] - timedelta(days=365)
     f_max, c_max = max(
         ((f, c) for f, c in zip(fechas, cierres) if f > desde), key=lambda par: par[1]
     )
-    sobre_media = cierre > media_200
-    en_max_20 = cierre >= max_20
+    caida = 1 - cierre / c_max
+    en_caida = caida >= CAIDA_MINIMA
+    giro = cierre > max_3_previo
 
     datos = {
         "id": valor["id"],
@@ -556,20 +560,18 @@ def analisis_tecnico(valor):
         "cambio_1d": round(cierre / cierres[-2] - 1, 4),
         "cambio_5d": round(cierre / cierres[-6] - 1, 4),
         "cambio_20d": round(cierre / cierres[-21] - 1, 4),
-        "media_200": redondear(media_200),
-        "distancia_media_200": round(cierre / media_200 - 1, 4),
-        "sobre_media_200": sobre_media,
-        "max_20": redondear(max_20),
-        "distancia_max_20": round(cierre / max_20 - 1, 4),
-        "en_max_20": en_max_20,
-        "senal_entrada": sobre_media and en_max_20,
-        "min_10": redondear(min_10),
-        "stop_orientativo": redondear(stop),
-        "min_20_previo": redondear(min_20_previo),
-        "bajo_min_20": cierre < min_20_previo,
         "max_52s": redondear(c_max),
         "fecha_max_52s": f_max.isoformat(),
-        "caida_desde_max_52s": round(1 - cierre / c_max, 4),
+        "caida_desde_max_52s": round(caida, 4),
+        "en_caida": en_caida,
+        "max_3_previo": redondear(max_3_previo),
+        "giro": giro,
+        "senal_entrada": en_caida and giro,
+        "min_10": redondear(min_10),
+        "stop_orientativo": redondear(stop),
+        "distancia_stop": round(stop / cierre - 1, 4),
+        "media_200": redondear(media_200),
+        "distancia_media_200": round(cierre / media_200 - 1, 4),
         "fuente": f"Yahoo Finance ({valor['simbolo']})",
     }
     if en_curso:
