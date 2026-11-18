@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T13:48:00+01:00",
+  "actualizado": "2026-11-18T02:13:48+01:00",
   "firma": "289a809e76fe",
   "regla": "Compra en caída: entrada solo si el último cierre está al menos un 20 % por debajo del cierre más alto del último año y es más alto que los cierres de las 3 sesiones anteriores (ha dejado de caer). Stop orientativo: el mínimo de las últimas 10 sesiones, pero nunca más de un 8 % por debajo del cierre. La media de 200 sesiones es solo una referencia de hasta dónde suele llegar un rebote. El crecimiento del negocio, la valoración y la fecha de resultados se comprueban aparte.",
   "nota": "Solo aparecen los valores al menos un 20 % por debajo de su cierre más alto de 52 semanas. 'senal_entrada': ha dejado de caer (cierra por encima de los cierres de las 3 sesiones anteriores). Antes de proponer uno hay que comprobar aparte que la empresa crece, que está barata frente a lo esperado y que no presenta resultados en 3 días hábiles. 'rebote_desde_minimo_20': cuánto ha subido desde el cierre más bajo de las últimas 20 sesiones.",
