@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T17:43:41+01:00",
+  "actualizado": "2026-11-20T00:26:50+01:00",
   "regla": "Compra en caída: entrada solo si el último cierre está al menos un 20 % por debajo del cierre más alto del último año y es más alto que los cierres de las 3 sesiones anteriores (ha dejado de caer). Stop orientativo: el mínimo de las últimas 10 sesiones, pero nunca más de un 8 % por debajo del cierre. La media de 200 sesiones es solo una referencia de hasta dónde suele llegar un rebote. El crecimiento del negocio, la valoración y la fecha de resultados se comprueban aparte.",
   "nota": "Calculado con cierres diarios sin ajustar por dividendos (como los gráficos del bróker), solo con sesiones ya cerradas. 'en_curso' es el precio de la sesión abierta, si la hay. 'stop_orientativo' supone entrar al último cierre.",
   "valores": [
@@ -9,29 +9,25 @@
       "simbolo": "NVDA",
       "mercado": "Nasdaq",
       "divisa": "USD",
-      "fecha": "2026-11-18",
-      "cierre": 150.96,
-      "cambio_1d": -0.0289,
-      "cambio_5d": -0.1311,
-      "cambio_20d": -0.3199,
+      "fecha": "2026-11-19",
+      "cierre": 145.98,
+      "cambio_1d": -0.033,
+      "cambio_5d": -0.1216,
+      "cambio_20d": -0.3121,
       "max_52s": 239.24,
       "fecha_max_52s": "2026-10-06",
-      "caida_desde_max_52s": 0.369,
+      "caida_desde_max_52s": 0.3898,
       "en_caida": true,
-      "max_3_previo": 162.85,
+      "max_3_previo": 156.14,
       "giro": false,
       "senal_entrada": false,
       "rebote_desde_minimo_20": 0.0,
-      "min_10": 148.8,
-      "stop_orientativo": 148.8,
-      "distancia_stop": -0.0143,
-      "media_200": 203.72,
-      "distancia_media_200": -0.259,
-      "fuente": "Yahoo Finance (NVDA)",
-      "en_curso": {
-        "fecha": "2026-11-19",
-        "precio": 152.87
-      }
+      "min_10": 145.71,
+      "stop_orientativo": 145.71,
+      "distancia_stop": -0.0018,
+      "media_200": 203.58,
+      "distancia_media_200": -0.2829,
+      "fuente": "Yahoo Finance (NVDA)"
     },
     {
       "id": "ES0177542018",
@@ -57,11 +53,7 @@
       "distancia_stop": -0.08,
       "media_200": 4.8777,
       "distancia_media_200": 0.0993,
-      "fuente": "Yahoo Finance (IAG.MC)",
-      "en_curso": {
-        "fecha": "2026-11-19",
-        "precio": 5.356
-      }
+      "fuente": "Yahoo Finance (IAG.MC)"
     },
     {
       "id": "ES0109067019",
@@ -87,11 +79,7 @@
       "distancia_stop": -0.0504,
       "media_200": 53.1176,
       "distancia_media_200": 0.1507,
-      "fuente": "Yahoo Finance (AMS.MC)",
-      "en_curso": {
-        "fecha": "2026-11-19",
-        "precio": 60.62
-      }
+      "fuente": "Yahoo Finance (AMS.MC)"
     },
     {
       "id": "ES0173516115",
@@ -117,11 +105,7 @@
       "distancia_stop": -0.0139,
       "media_200": 24.6616,
       "distancia_media_200": 0.1642,
-      "fuente": "Yahoo Finance (REP.MC)",
-      "en_curso": {
-        "fecha": "2026-11-19",
-        "precio": 28.82
-      }
+      "fuente": "Yahoo Finance (REP.MC)"
     },
     {
       "id": "ES0118594417",
@@ -147,11 +131,7 @@
       "distancia_stop": -0.005,
       "media_200": 55.9501,
       "distancia_media_200": -0.0752,
-      "fuente": "Yahoo Finance (IDR.MC)",
-      "en_curso": {
-        "fecha": "2026-11-19",
-        "precio": 51.58
-      }
+      "fuente": "Yahoo Finance (IDR.MC)"
     },
     {
       "id": "JE00BN574F90",
@@ -159,29 +139,25 @@
       "simbolo": "WIZZ.L",
       "mercado": "Bolsa de Londres",
       "divisa": "GBp",
-      "fecha": "2026-11-18",
-      "cierre": 1128.0,
-      "cambio_1d": 0.0,
-      "cambio_5d": -0.0166,
-      "cambio_20d": 0.1235,
+      "fecha": "2026-11-19",
+      "cierre": 1102.0,
+      "cambio_1d": -0.023,
+      "cambio_5d": -0.0256,
+      "cambio_20d": 0.1297,
       "max_52s": 1447.0,
       "fecha_max_52s": "2026-02-04",
-      "caida_desde_max_52s": 0.2205,
+      "caida_desde_max_52s": 0.2384,
       "en_caida": true,
       "max_3_previo": 1148.0,
       "giro": false,
       "senal_entrada": false,
-      "rebote_desde_minimo_20": 0.1849,
+      "rebote_desde_minimo_20": 0.1576,
       "min_10": 1017.0,
-      "stop_orientativo": 1037.76,
-      "distancia_stop": -0.08,
-      "media_200": 1058.0,
-      "distancia_media_200": 0.0662,
-      "fuente": "Yahoo Finance (WIZZ.L)",
-      "en_curso": {
-        "fecha": "2026-11-19",
-        "precio": 1100.0
-      }
+      "stop_orientativo": 1017.0,
+      "distancia_stop": -0.0771,
+      "media_200": 1056.46,
+      "distancia_media_200": 0.0431,
+      "fuente": "Yahoo Finance (WIZZ.L)"
     }
   ],
   "fallos": []
