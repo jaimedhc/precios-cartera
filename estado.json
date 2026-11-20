@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T14:28:04+01:00",
+  "actualizado": "2026-11-20T22:28:31+01:00",
   "activos": {
     "IE00BYX5NX33": {
       "fallos": [],
@@ -7,7 +7,7 @@
       "fuente": "FT Markets",
       "simbolo": "IE00BYX5NX33:EUR",
       "hora": null,
-      "cambio_vs_anterior": -0.0183
+      "cambio_vs_anterior": 0.0
     },
     "LU0625737910": {
       "fallos": [],
@@ -15,7 +15,7 @@
       "fuente": "FT Markets",
       "simbolo": "LU0625737910:EUR",
       "hora": null,
-      "cambio_vs_anterior": 0.0
+      "cambio_vs_anterior": -0.021
     },
     "LU0171305526": {
       "fallos": [
@@ -24,8 +24,8 @@
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "MI9S.F",
-      "hora": "2026-11-20T13:55:03+01:00",
-      "cambio_vs_anterior": -0.0317
+      "hora": "2026-11-20T19:31:50+01:00",
+      "cambio_vs_anterior": -0.0209
     },
     "IE000QAZP7L2": {
       "fallos": [],
@@ -33,84 +33,84 @@
       "fuente": "FT Markets",
       "simbolo": "IE000QAZP7L2:EUR",
       "hora": null,
-      "cambio_vs_anterior": -0.0149
+      "cambio_vs_anterior": 0.0
     },
     "IE00B43VDT70": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "SSLV.MI",
-      "hora": "2026-11-20T14:11:04+01:00",
-      "cambio_vs_anterior": -0.0621
+      "hora": "2026-11-20T17:24:13+01:00",
+      "cambio_vs_anterior": -0.0124
     },
     "CA2548481043": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "DMX.V",
-      "hora": "2026-11-19T21:59:54+01:00",
-      "cambio_vs_anterior": 0.0
+      "hora": "2026-11-20T21:59:52+01:00",
+      "cambio_vs_anterior": -0.0333
     },
     "ETH": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ethereum",
-      "hora": "2026-11-20T14:27:00+01:00",
-      "cambio_24h": -0.0388,
-      "cambio_vs_anterior": -0.002
+      "hora": "2026-11-20T22:27:26+01:00",
+      "cambio_24h": -0.0788,
+      "cambio_vs_anterior": -0.0686
     },
     "SOL": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "solana",
-      "hora": "2026-11-20T14:27:00+01:00",
-      "cambio_24h": -0.0525,
-      "cambio_vs_anterior": -0.0245
+      "hora": "2026-11-20T22:27:26+01:00",
+      "cambio_24h": -0.0642,
+      "cambio_vs_anterior": -0.0388
     },
     "XRP": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "ripple",
-      "hora": "2026-11-20T14:27:00+01:00",
-      "cambio_24h": -0.0469,
-      "cambio_vs_anterior": -0.0204
+      "hora": "2026-11-20T22:27:37+01:00",
+      "cambio_24h": -0.063,
+      "cambio_vs_anterior": -0.0449
     },
     "LINK": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "chainlink",
-      "hora": "2026-11-20T14:27:07+01:00",
-      "cambio_24h": -0.0546,
-      "cambio_vs_anterior": -0.0149
+      "hora": "2026-11-20T22:27:26+01:00",
+      "cambio_24h": -0.0597,
+      "cambio_vs_anterior": -0.0379
     },
     "RENDER": {
       "fallos": [],
       "ok": true,
       "fuente": "CoinGecko",
       "simbolo": "render-token",
-      "hora": "2026-11-20T14:27:07+01:00",
-      "cambio_24h": -0.0833,
-      "cambio_vs_anterior": -0.0244
+      "hora": "2026-11-20T22:27:26+01:00",
+      "cambio_24h": -0.0851,
+      "cambio_vs_anterior": -0.05
     },
     "EURCAD": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "EURCAD=X",
-      "hora": "2026-11-20T14:27:37+01:00",
-      "cambio_vs_anterior": 0.0003
+      "hora": "2026-11-20T22:27:57+01:00",
+      "cambio_vs_anterior": -0.0002
     },
     "EURUSD": {
       "fallos": [],
       "ok": true,
       "fuente": "Yahoo Finance",
       "simbolo": "EURUSD=X",
-      "hora": "2026-11-20T14:26:44+01:00",
-      "cambio_vs_anterior": 0.002
+      "hora": "2026-11-20T22:27:45+01:00",
+      "cambio_vs_anterior": -0.0032
     }
   },
   "errores": [],
@@ -124,8 +124,8 @@
   "escaner": {
     "analizados": 197,
     "total": 199,
-    "en_caida": 86,
-    "con_senal": 5,
+    "en_caida": 95,
+    "con_senal": 0,
     "fallos": 2
   }
 }
