@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T00:26:43+01:00",
+  "actualizado": "2026-11-20T05:12:39+01:00",
   "nota": "'cambio' en tanto por uno. Base '24h': variación de las últimas 24 horas según CoinGecko. Base 'día anterior': frente al último precio del día anterior que tiene el programa (valor liquidativo anterior en los fondos, cierre anterior en las acciones y el ETC).",
   "activos": [
     {
@@ -78,85 +78,85 @@
       "id": "ETH",
       "nombre": "Ethereum",
       "tipo": "Cripto",
-      "precio": 1598.3,
+      "precio": 1578.07,
       "divisa": "EUR",
       "fecha": "2026-11-20",
-      "cambio": -0.01,
+      "cambio": -0.0376,
       "base": "24h",
-      "precio_anterior": 1614.44,
+      "precio_anterior": 1639.72,
       "fecha_anterior": null
     },
     {
       "id": "SOL",
       "nombre": "Solana",
       "tipo": "Cripto",
-      "precio": 66.58,
+      "precio": 65.99,
       "divisa": "EUR",
       "fecha": "2026-11-20",
-      "cambio": -0.0038,
+      "cambio": -0.0265,
       "base": "24h",
-      "precio_anterior": 66.834,
+      "precio_anterior": 67.7863,
       "fecha_anterior": null
     },
     {
       "id": "XRP",
       "nombre": "XRP",
       "tipo": "Cripto",
-      "precio": 0.8749,
+      "precio": 0.8731,
       "divisa": "EUR",
       "fecha": "2026-11-20",
-      "cambio": -0.0063,
+      "cambio": -0.0147,
       "base": "24h",
-      "precio_anterior": 0.8804,
+      "precio_anterior": 0.8861,
       "fecha_anterior": null
     },
     {
       "id": "LINK",
       "nombre": "Chainlink",
       "tipo": "Cripto",
-      "precio": 8.18,
+      "precio": 8.04,
       "divisa": "EUR",
       "fecha": "2026-11-20",
-      "cambio": -0.0091,
+      "cambio": -0.0327,
       "base": "24h",
-      "precio_anterior": 8.2551,
+      "precio_anterior": 8.3118,
       "fecha_anterior": null
     },
     {
       "id": "RENDER",
       "nombre": "Render",
       "tipo": "Cripto",
-      "precio": 1.26,
+      "precio": 1.23,
       "divisa": "EUR",
       "fecha": "2026-11-20",
-      "cambio": -0.001,
+      "cambio": -0.0576,
       "base": "24h",
-      "precio_anterior": 1.2613,
+      "precio_anterior": 1.3052,
       "fecha_anterior": null
     },
     {
       "id": "EURCAD",
       "nombre": "Dólares canadienses por euro",
       "tipo": "Divisa",
-      "precio": 1.5726,
+      "precio": 1.5725,
       "divisa": "CAD",
-      "fecha": "2026-11-19",
-      "cambio": 0.0003,
+      "fecha": "2026-11-20",
+      "cambio": -0.0001,
       "base": "día anterior",
-      "precio_anterior": 1.5721,
-      "fecha_anterior": "2026-11-18"
+      "precio_anterior": 1.5726,
+      "fecha_anterior": "2026-11-19"
     },
     {
       "id": "EURUSD",
       "nombre": "Dólares estadounidenses por euro",
       "tipo": "Divisa",
-      "precio": 1.0971,
+      "precio": 1.0979,
       "divisa": "USD",
-      "fecha": "2026-11-19",
-      "cambio": -0.0004,
+      "fecha": "2026-11-20",
+      "cambio": 0.0007,
       "base": "día anterior",
-      "precio_anterior": 1.0975,
-      "fecha_anterior": "2026-11-18"
+      "precio_anterior": 1.0971,
+      "fecha_anterior": "2026-11-19"
     }
   ]
 }
