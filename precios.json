@@ -39,7 +39,7 @@
     "id": "IE00B43VDT70",
     "nombre": "Plata física (ETC)",
     "tipo": "ETC",
-    "precio": 35.985,
+    "precio": 35.935,
     "divisa": "EUR",
     "fecha": "2026-11-20",
     "fuente": "Yahoo Finance"
@@ -57,7 +57,7 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1557.33,
+    "precio": 1562.72,
     "divisa": "EUR",
     "fecha": "2026-11-22",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 64.25,
+    "precio": 64.15,
     "divisa": "EUR",
     "fecha": "2026-11-22",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.8507,
+    "precio": 0.8466,
     "divisa": "EUR",
     "fecha": "2026-11-22",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 8.03,
+    "precio": 8.04,
     "divisa": "EUR",
     "fecha": "2026-11-22",
     "fuente": "CoinGecko"
@@ -102,9 +102,9 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5727,
+    "precio": 1.5731,
     "divisa": "CAD",
-    "fecha": "2026-11-21",
+    "fecha": "2026-11-22",
     "fuente": "Yahoo Finance"
   },
   {
