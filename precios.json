@@ -12,52 +12,52 @@
     "id": "LU0625737910",
     "nombre": "Pictet China Index",
     "tipo": "Fondo",
-    "precio": 120.56,
+    "precio": 118.58,
     "divisa": "EUR",
-    "fecha": "2026-11-19",
+    "fecha": "2026-11-20",
     "fuente": "FT Markets"
   },
   {
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 74.29,
+    "precio": 78.732,
     "divisa": "EUR",
-    "fecha": "2026-11-20",
+    "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
   },
   {
     "id": "IE000QAZP7L2",
     "nombre": "iShares Emerging Markets (S Acc EUR)",
     "tipo": "Fondo",
-    "precio": 12.59,
+    "precio": 12.19,
     "divisa": "EUR",
-    "fecha": "2026-11-19",
+    "fecha": "2026-11-20",
     "fuente": "FT Markets"
   },
   {
     "id": "IE00B43VDT70",
     "nombre": "Plata física (ETC)",
     "tipo": "ETC",
-    "precio": 35.985,
+    "precio": 38.25,
     "divisa": "EUR",
-    "fecha": "2026-11-20",
+    "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
   },
   {
     "id": "CA2548481043",
     "nombre": "District Metals",
     "tipo": "Acción",
-    "precio": 0.29,
+    "precio": 0.305,
     "divisa": "CAD",
-    "fecha": "2026-11-20",
+    "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
   },
   {
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1570.92,
+    "precio": 1600.69,
     "divisa": "EUR",
     "fecha": "2026-11-23",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 65.44,
+    "precio": 67.55,
     "divisa": "EUR",
     "fecha": "2026-11-23",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.8578,
+    "precio": 0.8745,
     "divisa": "EUR",
     "fecha": "2026-11-23",
     "fuente": "CoinGecko"
@@ -84,7 +84,7 @@
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 8.12,
+    "precio": 8.34,
     "divisa": "EUR",
     "fecha": "2026-11-23",
     "fuente": "CoinGecko"
@@ -93,7 +93,7 @@
     "id": "RENDER",
     "nombre": "Render",
     "tipo": "Cripto",
-    "precio": 1.22,
+    "precio": 1.23,
     "divisa": "EUR",
     "fecha": "2026-11-23",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5744,
+    "precio": 1.5655,
     "divisa": "CAD",
     "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
@@ -111,7 +111,7 @@
     "id": "EURUSD",
     "nombre": "Dólares estadounidenses por euro",
     "tipo": "Divisa",
-    "precio": 1.0999,
+    "precio": 1.0891,
     "divisa": "USD",
     "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
