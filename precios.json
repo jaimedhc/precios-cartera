@@ -21,7 +21,7 @@
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 78.732,
+    "precio": 78.944,
     "divisa": "EUR",
     "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
@@ -48,7 +48,7 @@
     "id": "CA2548481043",
     "nombre": "District Metals",
     "tipo": "Acción",
-    "precio": 0.305,
+    "precio": 0.315,
     "divisa": "CAD",
     "fecha": "2026-11-23",
     "fuente": "Yahoo Finance"
@@ -57,63 +57,63 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1600.69,
+    "precio": 1556.99,
     "divisa": "EUR",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "CoinGecko"
   },
   {
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 67.55,
+    "precio": 65.59,
     "divisa": "EUR",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "CoinGecko"
   },
   {
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.8745,
+    "precio": 0.8722,
     "divisa": "EUR",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "CoinGecko"
   },
   {
     "id": "LINK",
     "nombre": "Chainlink",
     "tipo": "Cripto",
-    "precio": 8.34,
+    "precio": 8.3,
     "divisa": "EUR",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "CoinGecko"
   },
   {
     "id": "RENDER",
     "nombre": "Render",
     "tipo": "Cripto",
-    "precio": 1.23,
+    "precio": 1.18,
     "divisa": "EUR",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "CoinGecko"
   },
   {
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5655,
+    "precio": 1.5666,
     "divisa": "CAD",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "Yahoo Finance"
   },
   {
     "id": "EURUSD",
     "nombre": "Dólares estadounidenses por euro",
     "tipo": "Divisa",
-    "precio": 1.0891,
+    "precio": 1.0911,
     "divisa": "USD",
-    "fecha": "2026-11-23",
+    "fecha": "2026-11-24",
     "fuente": "Yahoo Finance"
   }
 ]
