@@ -3,9 +3,9 @@
     "id": "IE00BYX5NX33",
     "nombre": "Fidelity MSCI World",
     "tipo": "Fondo",
-    "precio": 13.97,
+    "precio": 13.95,
     "divisa": "EUR",
-    "fecha": "2026-11-24",
+    "fecha": "2026-11-25",
     "fuente": "FT Markets"
   },
   {
@@ -21,9 +21,9 @@
     "id": "LU0171305526",
     "nombre": "BlackRock World Gold",
     "tipo": "Fondo",
-    "precio": 77.45,
+    "precio": 78.249,
     "divisa": "EUR",
-    "fecha": "2026-11-25",
+    "fecha": "2026-11-26",
     "fuente": "Yahoo Finance"
   },
   {
@@ -39,9 +39,9 @@
     "id": "IE00B43VDT70",
     "nombre": "Plata física (ETC)",
     "tipo": "ETC",
-    "precio": 33.675,
+    "precio": 35.9,
     "divisa": "EUR",
-    "fecha": "2026-11-25",
+    "fecha": "2026-11-26",
     "fuente": "Yahoo Finance"
   },
   {
@@ -57,7 +57,7 @@
     "id": "ETH",
     "nombre": "Ethereum",
     "tipo": "Cripto",
-    "precio": 1554.92,
+    "precio": 1547.63,
     "divisa": "EUR",
     "fecha": "2026-11-26",
     "fuente": "CoinGecko"
@@ -66,7 +66,7 @@
     "id": "SOL",
     "nombre": "Solana",
     "tipo": "Cripto",
-    "precio": 65.12,
+    "precio": 64.44,
     "divisa": "EUR",
     "fecha": "2026-11-26",
     "fuente": "CoinGecko"
@@ -75,7 +75,7 @@
     "id": "XRP",
     "nombre": "XRP",
     "tipo": "Cripto",
-    "precio": 0.8725,
+    "precio": 0.8674,
     "divisa": "EUR",
     "fecha": "2026-11-26",
     "fuente": "CoinGecko"
@@ -93,7 +93,7 @@
     "id": "RENDER",
     "nombre": "Render",
     "tipo": "Cripto",
-    "precio": 1.21,
+    "precio": 1.2,
     "divisa": "EUR",
     "fecha": "2026-11-26",
     "fuente": "CoinGecko"
@@ -102,7 +102,7 @@
     "id": "EURCAD",
     "nombre": "Dólares canadienses por euro",
     "tipo": "Divisa",
-    "precio": 1.5591,
+    "precio": 1.5608,
     "divisa": "CAD",
     "fecha": "2026-11-26",
     "fuente": "Yahoo Finance"
